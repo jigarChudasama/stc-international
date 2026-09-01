@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme inline {
+  --color-hermes-cream: #fffcf7;
+  --color-hermes-header: #fcf7f1;
+  --color-hermes-dark: #444444;
+  --color-hermes-gray: #696969;
+  --color-hermes-border: #d4d4d4;
+  --color-hermes-divider: #f6f1eb;
+  --font-sans: var(--font-primary);
+  --font-edito: var(--font-edito);
+}
+
+@layer base {
+
+  html,
+  body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-hermes-cream text-hermes-dark antialiased;
+    font-family: var(--font-primary), "Manrope", Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+  }
+
+  a {
+    @apply text-inherit;
+  }
+
+  ::selection {
+    @apply bg-hermes-dark text-hermes-cream;
+  }
+
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  * {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
