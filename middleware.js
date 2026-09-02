@@ -5,7 +5,13 @@ const STATIC_PREFIXES = ["/_next", "/images"];
 export function middleware(request) {
   const { pathname } = request.nextUrl;
 
-  if (pathname === "/" || pathname === "/collection" || pathname === "/about-us") {
+  if (
+    pathname === "/" ||
+    pathname === "/collection" ||
+    pathname === "/about-us" ||
+    pathname.startsWith("/collection-detail") ||
+    pathname === "/quality-sourcing"
+  ) {
     return NextResponse.next();
   }
 

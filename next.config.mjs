@@ -25,6 +25,16 @@ const nextConfig = {
         hostname: "belstaff.com",
         pathname: "/cdn/**",
       },
+      {
+        protocol: "https",
+        hostname: "bottega-veneta.dam.kering.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "mediacdn.livestory.io",
+        pathname: "/**",
+      },
     ],
   },
 };
