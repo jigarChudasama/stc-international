@@ -5,7 +5,7 @@ const STATIC_PREFIXES = ["/_next", "/images"];
 export function middleware(request) {
   const { pathname } = request.nextUrl;
 
-  if (pathname === "/") {
+  if (pathname === "/" || pathname === "/collection" || pathname === "/about-us") {
     return NextResponse.next();
   }
 

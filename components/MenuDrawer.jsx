@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { mainMenu, aboutMenu } from "./header-data";
+import { mainMenu, aboutMenu } from "@/data/layout/header";
 import { HOME_ROUTE, normalizeImageUrl } from "@/lib/formatters";
 import { ChevronRight, Phone, X } from "lucide-react";
 

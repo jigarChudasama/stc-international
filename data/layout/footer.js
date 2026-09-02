@@ -1,4 +1,4 @@
-// Footer data
+// Layout footer data
 export const footer = {
   "columns": [
     {

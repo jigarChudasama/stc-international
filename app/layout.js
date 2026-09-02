@@ -1,4 +1,4 @@
-import { Manrope, EB_Garamond } from "next/font/google";
+import { Manrope, EB_Garamond, Overpass_Mono } from "next/font/google";
 import ClientShell from "@/components/ClientShell";
 import "./globals.css";
 
@@ -12,6 +12,12 @@ const ebGaramond = EB_Garamond({
   variable: "--font-edito",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+const overpassMono = Overpass_Mono({
+  subsets: ["latin"],
+  variable: "--font-overpass-mono",
   display: "swap",
 });
 
@@ -41,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en-us"
-      className={`${manrope.variable} ${ebGaramond.variable} h-full`}
+      className={`${manrope.variable} ${ebGaramond.variable} ${overpassMono.variable} h-full`}
       suppressHydrationWarning
     >
       <head />

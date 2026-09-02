@@ -5,40 +5,7 @@ import Link from "next/link";
 import { normalizeImageUrl, HOME_ROUTE } from "@/lib/formatters";
 import { contentContainer, horizontalScrollRow } from "@/lib/ui";
 
-const CATEGORIES = [
-  {
-    title: "Fragrance",
-    image: "https://assets.hermes.com/is/image/hermesproduct/083591CK7K_front_wm_1",
-  },
-  {
-    title: "Women's shoes",
-    image: "https://assets.hermes.com/is/image/hermesproduct/084283CKAC_front_wm_1",
-  },
-  {
-    title: "Belts",
-    image: "https://assets.hermes.com/is/image/hermesproduct/085819CK18_front_wm_1",
-  },
-  {
-    title: "Silk",
-    image: "https://assets.hermes.com/is/image/hermesproduct/084274CCBX_front_wm_1",
-  },
-  {
-    title: "Fashion Jewelry",
-    image: "https://assets.hermes.com/is/image/hermesproduct/103990M%2001_front_wm_1",
-  },
-  {
-    title: "Art of living",
-    image: "https://assets.hermes.com/is/image/hermesproduct/103983M%2001_front_wm_1",
-  },
-  {
-    title: "Hats",
-    image: "https://assets.hermes.com/is/image/hermesproduct/311888M%2003_front_wm_1",
-  },
-  {
-    title: "Men's shoes",
-    image: "https://assets.hermes.com/is/image/hermesproduct/104863M%2001_above_wm_1",
-  },
-];
+import { categories } from "@/data/home/categories";
 
 export default function CategoryPushRow() {
   return (
@@ -46,7 +13,7 @@ export default function CategoryPushRow() {
       <div
         className={`${horizontalScrollRow} md:grid md:grid-cols-4 md:gap-[2px] md:overflow-visible lg:grid-cols-8`}
       >
-        {CATEGORIES.map((item) => (
+        {categories.map((item) => (
           <Link
             key={item.title}
             href={HOME_ROUTE}

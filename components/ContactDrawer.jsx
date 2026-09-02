@@ -1,6 +1,6 @@
 "use client";
 
-import { customerService } from "./footer-data";
+import { customerService } from "@/data/layout/footer";
 import { HOME_ROUTE } from "@/lib/formatters";
 import { Mail, MessageCircle, MessageSquare, Phone, X } from "lucide-react";
 

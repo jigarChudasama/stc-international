@@ -1,4 +1,4 @@
-// Header navigation data
+// Layout header navigation data
 export const mainMenu = [
   {
     "type": "push",

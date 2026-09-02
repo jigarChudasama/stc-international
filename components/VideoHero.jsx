@@ -4,17 +4,20 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HOME_ROUTE, normalizeImageUrl, isVideoAsset } from "@/lib/formatters";
+import { videoHero } from "@/data/home/videoHero";
 import { Pause, Play } from "lucide-react";
 import { ctaLink } from "@/lib/ui";
 
-const VIDEO_URL =
-  "https://assets.hermes.com/is/image/hermesedito/VISUEL_PORTE_10_099-16-9%20%281%29";
-const MOBILE_VIDEO_URL =
-  "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551-4";
-const DESKTOP_IMAGE =
-  "https://assets.hermes.com/is/image/hermesedito/VISUEL_PORTE_10_099-16-9%20%281%29";
-const MOBILE_IMAGE =
-  "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551-4";
+const {
+  videoUrl: VIDEO_URL,
+  mobileVideoUrl: MOBILE_VIDEO_URL,
+  desktopImage: DESKTOP_IMAGE,
+  mobileImage: MOBILE_IMAGE,
+  ariaLabel,
+  title,
+  description,
+  ctaText,
+} = videoHero;
 
 const desktopPoster = normalizeImageUrl(DESKTOP_IMAGE);
 const mobilePoster = normalizeImageUrl(MOBILE_IMAGE);
@@ -64,7 +67,7 @@ export default function VideoHero() {
               muted
               loop
               playsInline
-              aria-label="Barénia Pleine fleur"
+              aria-label={ariaLabel}
               onError={() => setVideoFailed(true)}
             >
               <source src={`${MOBILE_VIDEO_URL}?fmt=mp4`} type="video/mp4" />
@@ -78,7 +81,7 @@ export default function VideoHero() {
               muted
               loop
               playsInline
-              aria-label="Barénia Pleine fleur"
+              aria-label={ariaLabel}
               onError={() => setVideoFailed(true)}
             >
               <source src={`${VIDEO_URL}?fmt=mp4`} type="video/mp4" />
@@ -113,7 +116,7 @@ export default function VideoHero() {
           <>
             <Image
               src={mobilePoster}
-              alt="Barénia Pleine fleur"
+              alt={ariaLabel}
               fill
               priority
               fetchPriority="high"
@@ -122,7 +125,7 @@ export default function VideoHero() {
             />
             <Image
               src={desktopPoster}
-              alt="Barénia Pleine fleur"
+              alt={ariaLabel}
               fill
               priority
               fetchPriority="high"
@@ -134,16 +137,13 @@ export default function VideoHero() {
 
         <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-black/55 via-black/10 to-transparent px-6 pb-10 pt-16 text-center text-white md:pb-14">
           <h2 className="mb-3 font-edito text-[1.5rem] font-normal md:text-[2rem] lg:text-[2.125rem]">
-            <span>Barénia Pleine fleur</span>
+            <span>{title}</span>
           </h2>
           <p className="mb-5 max-w-[560px] text-xs leading-relaxed md:text-sm">
-            <span>
-              Barénia Pleine Fleur reveals a new floral facet of the Hermès chypre and glows with a sunny
-              radiance.
-            </span>
+            <span>{description}</span>
           </p>
           <Link href={HOME_ROUTE} className={`${ctaLink} text-xs text-white`}>
-            Discover
+            {ctaText}
           </Link>
         </div>
       </div>

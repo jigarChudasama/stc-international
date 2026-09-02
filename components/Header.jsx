@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { HOME_ROUTE } from "@/lib/formatters";
+import { useHideOnScroll } from "@/lib/useHideOnScroll";
 import { useDrawerTransition } from "@/lib/useDrawerTransition";
 import HermesLogo from "./HermesLogo";
 import LoadingBar from "./LoadingBar";
@@ -73,11 +74,18 @@ export default function Header() {
   const isDrawerVisible = menu.isOpen || contact.isOpen;
   const isDrawerActive =
     (menu.isOpen && menu.isActive) || (contact.isOpen && contact.isActive);
+  const isHeaderVisible = useHideOnScroll(!isDrawerVisible);
 
   return (
     <>
       <header
-        className={`sticky top-0 z-[100] bg-hermes-header ${isDrawerVisible ? "relative" : ""}`}
+        className={`sticky top-0 z-[100] bg-hermes-header transition-transform duration-300 ease-in-out will-change-transform ${
+          isDrawerVisible
+            ? "relative translate-y-0"
+            : isHeaderVisible
+              ? "translate-y-0"
+              : "-translate-y-full"
+        }`}
         role="banner"
       >
         {isDrawerVisible ? (

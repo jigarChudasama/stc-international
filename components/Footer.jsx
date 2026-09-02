@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { footer, customerService } from "./footer-data";
+import { footer, customerService } from "@/data/layout/footer";
 import { HOME_ROUTE } from "@/lib/formatters";
 import HermesLogo from "./HermesLogo";
 

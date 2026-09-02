@@ -20,6 +20,11 @@ const nextConfig = {
         hostname: "cms.discovery.hcomapps.com",
         pathname: "/is/image/**",
       },
+      {
+        protocol: "https",
+        hostname: "belstaff.com",
+        pathname: "/cdn/**",
+      },
     ],
   },
 };
