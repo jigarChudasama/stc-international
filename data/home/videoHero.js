@@ -1,15 +1,12 @@
+import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE, LOREM } from "@/lib/placeholder";
+
 export const videoHero = {
-  videoUrl:
-    "https://assets.hermes.com/is/image/hermesedito/VISUEL_PORTE_10_099-16-9%20%281%29",
-  mobileVideoUrl:
-    "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551-4",
-  desktopImage:
-    "https://assets.hermes.com/is/image/hermesedito/VISUEL_PORTE_10_099-16-9%20%281%29",
-  mobileImage:
-    "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551-4",
-  ariaLabel: "Barénia Pleine fleur",
-  title: "Barénia Pleine fleur",
-  description:
-    "Barénia Pleine Fleur reveals a new floral facet of the Hermès chypre and glows with a sunny radiance.",
-  ctaText: "Discover",
+  videoUrl: PLACEHOLDER_WIDE,
+  mobileVideoUrl: PLACEHOLDER_IMAGE,
+  desktopImage: PLACEHOLDER_WIDE,
+  mobileImage: PLACEHOLDER_IMAGE,
+  ariaLabel: LOREM.title,
+  title: LOREM.title,
+  description: LOREM.long,
+  ctaText: LOREM.cta,
 };

@@ -1,16 +1,18 @@
 @import "tailwindcss";
-@import "lenis/dist/lenis.css";
 
 @theme inline {
-  --color-hermes-cream: #fffcf7;
-  --color-hermes-header: #fcf7f1;
-  --color-hermes-dark: #444444;
-  --color-hermes-gray: #696969;
-  --color-hermes-border: #d4d4d4;
-  --color-hermes-divider: #f6f1eb;
+  /* Executive Edge Palette */
+  --color-brand-cream: #faf7f2; /* Soft Warm White — page surfaces */
+  --color-brand-header: #f5efe0; /* Warm Cream — header / elevated surfaces */
+  --color-brand-dark: #2b2b29; /* Deep Charcoal — primary text */
+  --color-brand-gray: #6b6860; /* Muted charcoal for secondary text */
+  --color-brand-border: #d4c8b0; /* Warm cream border */
+  --color-brand-divider: #ebe4d6; /* Soft divider on cream */
+  --color-brand-navy: #09284c; /* Deep Navy — brand / dark surfaces */
+  --color-brand-gold: #caa96e; /* Rich Gold — accent */
   --font-sans: var(--font-primary);
   --font-edito: var(--font-edito);
-  --font-mono: var(--font-overpass-mono), "Overpass Mono", ui-monospace, monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --max-width-container: 1440px;
   --text-display: clamp(2rem, 5vw, 3.125rem);
 }
@@ -24,7 +26,7 @@
   }
 
   body {
-    @apply overflow-x-hidden bg-hermes-cream text-hermes-dark antialiased;
+    @apply overflow-x-hidden bg-brand-cream text-brand-dark antialiased;
     font-family: var(--font-primary), "Manrope", Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
   }
@@ -34,7 +36,7 @@
   }
 
   ::selection {
-    @apply bg-hermes-dark text-hermes-cream;
+    @apply bg-brand-navy text-brand-cream;
   }
 
   ::-webkit-scrollbar,
@@ -62,6 +64,74 @@
 }
 
 @layer components {
+  .header-bar {
+    --header-cradle: 5.5rem;
+    position: relative;
+    overflow: visible;
+    background-color: var(--color-brand-header);
+  }
+
+  .header-shell {
+    --header-cradle: 5.5rem;
+  }
+
+  .header-bar::before,
+  .header-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 1px;
+    width: calc(50% - (var(--header-cradle) / 2));
+    background-color: var(--color-brand-divider);
+  }
+
+  .header-bar::before {
+    left: 0;
+  }
+
+  .header-bar::after {
+    right: 0;
+  }
+
+  .header-logo-slot {
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+  }
+
+  .header-logo-cradle {
+    pointer-events: auto;
+    position: relative;
+    display: flex;
+    height: var(--header-cradle);
+    width: var(--header-cradle);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-brand-header);
+  }
+
+  .header-logo-cradle::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 1px solid var(--color-brand-divider);
+    clip-path: inset(50% 0 0 0);
+  }
+
+  @media (min-width: 1024px) {
+    .header-bar,
+    .header-shell {
+      --header-cradle: 6.75rem;
+    }
+  }
+
   .collection-highlight-slider {
     background-image: linear-gradient(to bottom, transparent 72%, rgba(0, 0, 0, 0.7));
   }
@@ -117,8 +187,8 @@
   }
 
   .about-us-page {
-    background: var(--color-hermes-cream);
-    color: var(--color-hermes-dark);
+    background: var(--color-brand-cream);
+    color: var(--color-brand-dark);
     font-family: var(--font-primary), "Manrope", Arial, Helvetica, sans-serif;
   }
 
@@ -129,7 +199,7 @@
     line-height: 1.1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-hermes-dark);
+    color: var(--color-brand-dark);
   }
 
   .about-us-page .quote-title {
@@ -140,7 +210,7 @@
     font-style: normal;
     line-height: 1.6;
     letter-spacing: 0.01em;
-    color: var(--color-hermes-cream);
+    color: var(--color-brand-cream);
   }
 
   .about-us-page .quote-subtitle {
@@ -151,7 +221,7 @@
     line-height: 1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-hermes-cream);
+    color: var(--color-brand-gold);
   }
 
   @media (min-width: 768px) {
@@ -163,7 +233,7 @@
   .about-us-page .media-split-body {
     font-size: 0.75rem;
     line-height: 1.6;
-    color: var(--color-hermes-dark);
+    color: var(--color-brand-dark);
   }
 
   @media (min-width: 768px) {
@@ -174,7 +244,7 @@
   }
 
   .about-us-page .media-split-section {
-    background: var(--color-hermes-cream);
+    background: var(--color-brand-cream);
   }
 
   .about-us-page .media-split-grid {
@@ -245,7 +315,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    background: var(--color-hermes-cream);
+    background: var(--color-brand-cream);
     padding: 4rem 1.25rem;
   }
 
@@ -276,7 +346,7 @@
     max-width: 440px;
     font-size: 0.75rem;
     line-height: 1.6;
-    color: var(--color-hermes-gray);
+    color: var(--color-brand-gray);
   }
 
   @media (min-width: 768px) {
@@ -301,7 +371,7 @@
     line-height: 1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--color-hermes-dark);
+    color: var(--color-brand-dark);
   }
 
   @media (min-width: 768px) {
@@ -315,7 +385,7 @@
     max-width: 440px;
     font-size: 0.75rem;
     line-height: 1.6;
-    color: var(--color-hermes-gray);
+    color: var(--color-brand-gray);
   }
 
   @media (min-width: 768px) {
@@ -335,15 +405,15 @@
   }
 
   .collection-detail-page .pdp {
-    @apply max-w-full bg-hermes-cream;
+    @apply max-w-full bg-brand-cream;
   }
 
   .collection-detail-page .pdp-hero {
-    @apply grid grid-cols-2 gap-0 bg-hermes-cream;
+    @apply grid grid-cols-2 gap-0 bg-brand-cream;
   }
 
   .collection-detail-page .pdp-hero__cell {
-    @apply block cursor-zoom-in overflow-hidden border-0 bg-hermes-divider p-0;
+    @apply block cursor-zoom-in overflow-hidden border-0 bg-brand-divider p-0;
   }
 
   .collection-detail-page .pdp-image {
@@ -355,7 +425,7 @@
   }
 
   .collection-detail-page .pdp-description {
-    @apply mb-3 text-base leading-relaxed text-hermes-dark;
+    @apply mb-3 text-base leading-relaxed text-brand-dark;
   }
 
   .collection-detail-page .pdp-accordions {
@@ -363,7 +433,7 @@
   }
 
   .collection-detail-page .pdp-accordion {
-    @apply flex w-full cursor-pointer items-center justify-between gap-5 border-0 bg-transparent py-[18px] text-left text-base text-hermes-dark;
+    @apply flex w-full cursor-pointer items-center justify-between gap-5 border-0 bg-transparent py-[18px] text-left text-base text-brand-dark;
   }
 
   .collection-detail-page .pdp-accordion__label {
@@ -379,11 +449,11 @@
   }
 
   .collection-detail-page .pdp-title {
-    @apply mb-4 text-[22px] font-medium leading-tight text-hermes-dark md:mb-[18px] md:text-2xl;
+    @apply mb-4 text-[22px] font-medium leading-tight text-brand-dark md:mb-[18px] md:text-2xl;
   }
 
   .collection-detail-page .pdp-color-label {
-    @apply mb-3.5 text-base text-hermes-dark;
+    @apply mb-3.5 text-base text-brand-dark;
   }
 
   .collection-detail-page .pdp-swatches {
@@ -391,11 +461,11 @@
   }
 
   .collection-detail-page .pdp-swatch {
-    @apply block h-[52px] w-[52px] cursor-pointer overflow-hidden border-0 border-b-[3px] border-b-transparent bg-hermes-divider p-0 transition-colors md:h-[60px] md:w-[60px];
+    @apply block h-[52px] w-[52px] cursor-pointer overflow-hidden border-0 border-b-[3px] border-b-transparent bg-brand-divider p-0 transition-colors md:h-[60px] md:w-[60px];
   }
 
   .collection-detail-page .pdp-swatch.is-selected {
-    @apply border-b-hermes-dark;
+    @apply border-b-brand-navy;
   }
 
   .collection-detail-page .pdp-swatch__img {
@@ -403,11 +473,11 @@
   }
 
   .collection-detail-page .pdp-gallery {
-    @apply grid grid-cols-2 gap-[7px] bg-hermes-cream;
+    @apply grid grid-cols-2 gap-[7px] bg-brand-cream;
   }
 
   .collection-detail-page .pdp-gallery__cell {
-    @apply cursor-zoom-in overflow-hidden border-0 bg-hermes-divider p-0;
+    @apply cursor-zoom-in overflow-hidden border-0 bg-brand-divider p-0;
   }
 
   .collection-detail-page .pdp-zoom {
@@ -427,7 +497,7 @@
   }
 
   .collection-detail-page .popin__panel {
-    @apply max-h-[90vh] w-full max-w-[480px] overflow-y-auto bg-hermes-cream;
+    @apply max-h-[90vh] w-full max-w-[480px] overflow-y-auto bg-brand-cream;
   }
 
   .collection-detail-page .popin__panel--drawer {
@@ -435,15 +505,15 @@
   }
 
   .collection-detail-page .popin__head {
-    @apply sticky top-0 flex items-center justify-between border-b border-hermes-border bg-hermes-cream px-6 py-5;
+    @apply sticky top-0 flex items-center justify-between border-b border-brand-border bg-brand-cream px-6 py-5;
   }
 
   .collection-detail-page .popin__title {
-    @apply text-[13px] font-normal uppercase tracking-wider text-hermes-dark;
+    @apply text-[13px] font-normal uppercase tracking-wider text-brand-dark;
   }
 
   .collection-detail-page .popin__close {
-    @apply border-0 bg-transparent text-[11px] uppercase tracking-wide text-hermes-dark;
+    @apply border-0 bg-transparent text-[11px] uppercase tracking-wide text-brand-dark;
   }
 
   .collection-detail-page .popin__body {
@@ -451,27 +521,27 @@
   }
 
   .collection-detail-page .popin__text {
-    @apply m-0 text-xs leading-relaxed text-hermes-gray;
+    @apply m-0 text-xs leading-relaxed text-brand-gray;
   }
 
   .collection-detail-page .popin-detail__lead {
-    @apply text-[13px] leading-relaxed text-hermes-gray;
+    @apply text-[13px] leading-relaxed text-brand-gray;
   }
 
   .collection-detail-page .popin-detail__list {
-    @apply mt-4 text-hermes-dark;
+    @apply mt-4 text-brand-dark;
   }
 
   .collection-detail-page .popin-detail__muted {
-    @apply mt-4 text-[13px] text-hermes-gray;
+    @apply mt-4 text-[13px] text-brand-gray;
   }
 
   .collection-detail-page .popin-detail__line {
-    @apply mt-3 text-[13px] text-hermes-dark;
+    @apply mt-3 text-[13px] text-brand-dark;
   }
 
   .collection-detail-page .popin-detail__code {
-    @apply mt-2 text-[13px] text-hermes-dark;
+    @apply mt-2 text-[13px] text-brand-dark;
   }
 
   .collection-detail-page .popin-detail__accordions {
@@ -479,7 +549,7 @@
   }
 
   .collection-detail-page .popin-expander {
-    @apply border-b border-hermes-border;
+    @apply border-b border-brand-border;
   }
 
   .collection-detail-page .popin-expander__btn {
@@ -487,26 +557,33 @@
   }
 
   .collection-detail-page .popin-expander__label {
-    @apply m-0 text-[11px] font-normal uppercase tracking-wider text-hermes-dark;
+    @apply m-0 text-[11px] font-normal uppercase tracking-wider text-brand-dark;
   }
 
   .collection-detail-page .popin-expander__panel {
-    @apply whitespace-pre-line pb-4 text-[13px] leading-relaxed text-hermes-gray;
+    @apply whitespace-pre-line pb-4 text-[13px] leading-relaxed text-brand-gray;
   }
 
   .quality-sourcing-page .qs-heading {
-    @apply text-center text-xs font-normal uppercase leading-[1.2] tracking-[0.06em] text-hermes-dark;
+    @apply text-center text-xs font-normal uppercase leading-[1.2] tracking-[0.06em] text-brand-dark;
   }
 
   .quality-sourcing-page .qs-copy {
-    @apply text-center text-xs font-normal uppercase leading-normal tracking-[0.04em] text-hermes-dark;
+    @apply text-center text-xs font-normal uppercase leading-normal tracking-[0.04em] text-brand-dark;
   }
 
   .quality-sourcing-page .qs-copy-body {
-    @apply text-left text-sm font-normal uppercase leading-normal tracking-[0.02em] text-hermes-dark md:text-center md:text-xs md:tracking-[0.04em];
+    @apply text-left text-sm font-normal uppercase leading-normal tracking-[0.02em] text-brand-dark md:text-center md:text-xs md:tracking-[0.04em];
   }
 
   .quality-sourcing-page .qs-text-link {
-    @apply inline-block text-[11px] font-bold uppercase tracking-[0.08em] text-hermes-dark underline underline-offset-[6px] transition-opacity duration-200 hover:opacity-70;
+    @apply inline-block text-[11px] font-bold uppercase tracking-[0.08em] text-brand-navy underline underline-offset-[6px] decoration-brand-gold transition-opacity duration-200 hover:opacity-70;
+  }
+}
+
+@layer utilities {
+  .defer-paint {
+    content-visibility: auto;
+    contain-intrinsic-size: auto none auto 32rem;
   }
 }

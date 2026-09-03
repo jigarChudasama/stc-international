@@ -1,46 +1,57 @@
 {
   "page": {
-    "title": "All Hermès Wallets | Hermès USA",
+    "title": "All products | Lorem ipsum",
     "resultCount": 48
   },
   "pageHeader": {
-    "parent": "Leather goods",
-    "current": "Wallets",
+    "parent": "Leather Goods",
+    "current": "All Bags",
     "totalProducts": 143
   },
   "navigation": [
-    "Women",
-    "Men",
-    "Home, Outdoor and Equestrian",
-    "Jewelry and Watches",
-    "Fragrances and Make-Up",
-    "Gifts and Petit h",
-    "About Hermès"
+    "Men’s Bags",
+    "Women’s Handbags",
+    "Travelling Bags & Backpacks",
+    "Wallets",
+    "Purses",
+    "Small Leather Goods"
   ],
   "highlightBanner": [
     {
-      "label": "Change purses",
-      "count": "23 items",
-      "href": "/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=porte_monnaies",
-      "image": "https://assets.hermes.com/is/image/hermesproduct/smallleathergoodswallets_porte_monnaies?defaultimage=gridhighlight_default"
+      "label": "Men’s Bags",
+      "count": "24 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
     },
     {
-      "label": "Compact wallets",
-      "count": "81 items",
-      "href": "/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=portefeuilles_compact_et_mini",
-      "image": "https://assets.hermes.com/is/image/hermesproduct/smallleathergoodswallets_portefeuilles_compact_et_mini?defaultimage=gridhighlight_default"
+      "label": "Women’s Handbags",
+      "count": "36 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
     },
     {
-      "label": "Long wallets",
-      "count": "39 items",
-      "href": "/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=portefeuilles_long",
-      "image": "https://assets.hermes.com/is/image/hermesproduct/smallleathergoodswallets_portefeuilles_long?defaultimage=gridhighlight_default"
+      "label": "Travelling Bags & Backpacks",
+      "count": "18 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
     },
     {
-      "label": "Customizable",
-      "count": "1 item",
-      "href": "/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=produits_personnalisables",
-      "image": "https://assets.hermes.com/is/image/hermesproduct/smallleathergoodswallets_produits_personnalisables?defaultimage=gridhighlight_default"
+      "label": "Wallets",
+      "count": "42 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
+    },
+    {
+      "label": "Purses",
+      "count": "28 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
+    },
+    {
+      "label": "Small Leather Goods",
+      "count": "31 items",
+      "href": "/collection",
+      "image": "/images/placeholder.jpg"
     }
   ],
   "products": [
@@ -48,628 +59,628 @@
       "sku": "082214CK7P",
       "slug": "/us/en/product/constance-slim-wallet-H082214CK7P/",
       "price": "$3,725",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 01",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082214CK7P_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082214CK7P_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082213CPD2",
       "slug": "/us/en/product/roulis-slim-wallet-H082213CPD2/",
       "price": "$3,325",
-      "title": "Roulis Slim wallet",
+      "title": "Lorem product 02",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082213CPD2_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082213CPD2_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "264142AA00",
       "slug": "/us/en/product/smallleathergoods/config/customizable-bastia-change-purse-H264142AA00/",
       "price": "$310",
-      "title": "Customizable Bastia change purse",
+      "title": "Lorem product 03",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/264142AA00_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/264142AA00_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084931CK05",
       "slug": "/us/en/product/constance-slim-wallet-H084931CK05/",
       "price": "$4,175",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 04",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084931CK05_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084931CK05_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "086437CK05",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H086437CK05/",
       "price": "$7,250",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 05",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/086437CK05_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/086437CK05_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "039759CKD2",
       "slug": "/us/en/product/bastia-change-purse-H039759CKD2/",
       "price": "$325",
-      "title": "Bastia change purse",
+      "title": "Lorem product 06",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/039759CKD2_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/039759CKD2_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082053CK9T",
       "slug": "/us/en/product/roulis-slim-wallet-H082053CK9T/",
       "price": "$3,275",
-      "title": "Roulis Slim wallet",
+      "title": "Lorem product 07",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082053CK9T_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082053CK9T_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085779CK4D",
       "slug": "/us/en/product/new-h-passant-compact-wallet-H085779CK4D/",
       "price": "$3,925",
-      "title": "New H Passant Compact wallet",
+      "title": "Lorem product 08",
       "color": null,
       "isNew": true,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085779CK4D_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085779CK4D_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "041054CK9T",
       "slug": "/us/en/product/bastia-change-purse-H041054CK9T/",
       "price": "$310",
-      "title": "Bastia change purse",
+      "title": "Lorem product 09",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/041054CK9T_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/041054CK9T_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082060CC55",
       "slug": "/us/en/product/constance-slim-wallet-H082060CC55/",
       "price": "$3,650",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 10",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082060CC55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082060CC55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "043013CA4D",
       "slug": "/us/en/product/mc-copernic-compact-wallet-H043013CA4D/",
       "price": "$2,225",
-      "title": "MC² Copernic Compact wallet",
+      "title": "Lorem product 11",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/043013CA4D_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/043013CA4D_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "039759CKS3",
       "slug": "/us/en/product/bastia-change-purse-H039759CKS3/",
       "price": "$325",
-      "title": "Bastia change purse",
+      "title": "Lorem product 12",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/039759CKS3_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/039759CKS3_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084817CC55",
       "slug": "/us/en/product/bearn-compact-wallet-H084817CC55/",
       "price": "$3,925",
-      "title": "Bearn Compact wallet",
+      "title": "Lorem product 13",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084817CC55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084817CC55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "087985CC89",
       "slug": "/us/en/product/maillon-compact-wallet-H087985CC89/",
       "price": "$3,450",
-      "title": "Maillon Compact wallet",
+      "title": "Lorem product 14",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/087985CC89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/087985CC89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082053CP37",
       "slug": "/us/en/product/roulis-slim-wallet-H082053CP37/",
       "price": "$3,275",
-      "title": "Roulis Slim wallet",
+      "title": "Lorem product 15",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082053CP37_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082053CP37_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "086474CC89",
       "slug": "/us/en/product/charniere-compact-wallet-H086474CC89/",
       "price": "$3,975",
-      "title": "Charniere Compact wallet",
+      "title": "Lorem product 16",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/086474CC89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/086474CC89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085047CC89",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H085047CC89/",
       "price": "$6,350",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 17",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085047CC89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085047CC89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084594CK37",
       "slug": "/us/en/product/h-sellier-compact-wallet-H084594CK37/",
       "price": "$2,875",
-      "title": "H Sellier Compact wallet",
+      "title": "Lorem product 18",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084594CK37_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084594CK37_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "041054CK7U",
       "slug": "/us/en/product/bastia-change-purse-H041054CK7U/",
       "price": "$310",
-      "title": "Bastia change purse",
+      "title": "Lorem product 19",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/041054CK7U_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/041054CK7U_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "043013CA7K",
       "slug": "/us/en/product/mc-copernic-compact-wallet-H043013CA7K/",
       "price": "$2,225",
-      "title": "MC² Copernic Compact wallet",
+      "title": "Lorem product 20",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/043013CA7K_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/043013CA7K_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082502CK73",
       "slug": "/us/en/product/constance-slim-wallet-H082502CK73/",
       "price": "$10,700",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 21",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082502CK73_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082502CK73_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "087537CKAA",
       "slug": "/us/en/product/silk-in-classique-long-wallet-H087537CKAA/",
       "price": "$2,100",
-      "title": "Silk'In Classique long wallet",
+      "title": "Lorem product 22",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/087537CKAA_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/087537CKAA_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "044095CA7U",
       "slug": "/us/en/product/mc-fleming-wallet-H044095CA7U/",
       "price": "$3,150",
-      "title": "MC² Fleming wallet",
+      "title": "Lorem product 23",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/044095CA7U_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/044095CA7U_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "078405CK7K",
       "slug": "/us/en/product/bastia-change-purse-H078405CK7K/",
       "price": "$430",
-      "title": "Bastia change purse",
+      "title": "Lorem product 24",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/078405CK7K_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/078405CK7K_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "087985CK89",
       "slug": "/us/en/product/maillon-compact-wallet-H087985CK89/",
       "price": "$3,450",
-      "title": "Maillon Compact wallet",
+      "title": "Lorem product 25",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/087985CK89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/087985CK89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "041054CK55",
       "slug": "/us/en/product/bastia-change-purse-H041054CK55/",
       "price": "$310",
-      "title": "Bastia change purse",
+      "title": "Lorem product 26",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/041054CK55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/041054CK55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "086474CK89",
       "slug": "/us/en/product/charniere-compact-wallet-H086474CK89/",
       "price": "$3,975",
-      "title": "Charniere Compact wallet",
+      "title": "Lorem product 27",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/086474CK89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/086474CK89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082502CK89",
       "slug": "/us/en/product/constance-slim-wallet-H082502CK89/",
       "price": "$10,700",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 28",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082502CK89_front_1?size=3000,3000&extend=300,300,300,300&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082502CK89_worn_1?size=3000,3000&extend=300,300,300,300&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "088153CK55",
       "slug": "/us/en/product/plipla-compact-wallet-H088153CK55/",
       "price": "$1,825",
-      "title": "Plipla Compact wallet",
+      "title": "Lorem product 29",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/088153CK55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/088153CK55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082213CK89",
       "slug": "/us/en/product/roulis-slim-wallet-H082213CK89/",
       "price": "$3,325",
-      "title": "Roulis Slim wallet",
+      "title": "Lorem product 30",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082213CK89_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082213CK89_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085819CK4D",
       "slug": "/us/en/product/new-h-passant-toutenmain-wallet-H085819CK4D/",
       "price": "$4,300",
-      "title": "New H Passant Toutenmain wallet",
+      "title": "Lorem product 31",
       "color": null,
       "isNew": true,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085819CK4D_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085819CK4D_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "039790CC18",
       "slug": "/us/en/product/bearn-compact-wallet-H039790CC18/",
       "price": "$3,725",
-      "title": "Bearn Compact wallet",
+      "title": "Lorem product 32",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/039790CC18_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/039790CC18_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "086057CC18",
       "slug": "/us/en/product/charniere-compact-wallet-H086057CC18/",
       "price": "$2,875",
-      "title": "Charniere Compact wallet",
+      "title": "Lorem product 33",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/086057CC18_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/086057CC18_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082053CP18",
       "slug": "/us/en/product/roulis-slim-wallet-H082053CP18/",
       "price": "$3,275",
-      "title": "Roulis Slim wallet",
+      "title": "Lorem product 34",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082053CP18_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082053CP18_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085779CK89",
       "slug": "/us/en/product/new-h-passant-compact-wallet-H085779CK89/",
       "price": "$3,925",
-      "title": "New H Passant Compact wallet",
+      "title": "Lorem product 35",
       "color": null,
       "isNew": true,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085779CK89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085779CK89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085819CK18",
       "slug": "/us/en/product/new-h-passant-toutenmain-wallet-H085819CK18/",
       "price": "$4,300",
-      "title": "New H Passant Toutenmain wallet",
+      "title": "Lorem product 36",
       "color": null,
       "isNew": true,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085819CK18_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085819CK18_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082502CD89",
       "slug": "/us/en/product/constance-slim-wallet-H082502CD89/",
       "price": "$10,700",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 37",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082502CD89_front_1?size=3000,3000&extend=300,300,300,300&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082502CD89_worn_1?size=3000,3000&extend=300,300,300,300&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084940CK55",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H084940CK55/",
       "price": "$6,200",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 38",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084940CK55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084940CK55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "085047CK89",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H085047CK89/",
       "price": "$6,350",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 39",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/085047CK89_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/085047CK89_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "041054CK10",
       "slug": "/us/en/product/bastia-change-purse-H041054CK10/",
       "price": "$310",
-      "title": "Bastia change purse",
+      "title": "Lorem product 40",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/041054CK10_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/041054CK10_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "082214CC7P",
       "slug": "/us/en/product/constance-slim-wallet-H082214CC7P/",
       "price": "$3,725",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 41",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/082214CC7P_worn_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/082214CC7P_front_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "086437CPY9",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H086437CPY9/",
       "price": "$7,250",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 42",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/086437CPY9_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/086437CPY9_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084531CK37",
       "slug": "/us/en/product/h-sellier-compact-wallet-H084531CK37/",
       "price": "$2,775",
-      "title": "H Sellier Compact wallet",
+      "title": "Lorem product 43",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084531CK37_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084531CK37_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084940CC37",
       "slug": "/us/en/product/kelly-pocket-long-wallet-H084940CC37/",
       "price": "$6,200",
-      "title": "Kelly Pocket Long wallet",
+      "title": "Lorem product 44",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084940CC37_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084940CC37_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=900&hei=900"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084931CPY9",
       "slug": "/us/en/product/constance-slim-wallet-H084931CPY9/",
       "price": "$4,175",
-      "title": "Constance Slim wallet",
+      "title": "Lorem product 45",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084931CPY9_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084931CPY9_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "087535CKAA",
       "slug": "/us/en/product/silk-in-classique-long-wallet-H087535CKAA/",
       "price": "$2,100",
-      "title": "Silk'In Classique long wallet",
+      "title": "Lorem product 46",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/087535CKAA_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/087535CKAA_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "041054CK4D",
       "slug": "/us/en/product/bastia-change-purse-H041054CK4D/",
       "price": "$310",
-      "title": "Bastia change purse",
+      "title": "Lorem product 47",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/041054CK4D_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/041054CK4D_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     },
     {
       "sku": "084531CK55",
       "slug": "/us/en/product/h-sellier-compact-wallet-H084531CK55/",
       "price": "$2,775",
-      "title": "H Sellier Compact wallet",
+      "title": "Lorem product 48",
       "color": null,
       "isNew": false,
-      "imageDefault": "https://assets.hermes.com/is/image/hermesproduct/084531CK55_front_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800",
-      "imageHover": "https://assets.hermes.com/is/image/hermesproduct/084531CK55_worn_wm_1?size=3000,3000&extend=0,0,0,0&align=0,0&wid=800&hei=800"
+      "imageDefault": "/images/placeholder.jpg",
+      "imageHover": "/images/placeholder.jpg"
     }
   ],
   "edito": {
-    "title": "The mark of time",
-    "subtitle": "Leather built to last as long as good taste endures.",
-    "image": "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551?fit=wrap%2C0&wid=3840&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
+    "title": "Lorem ipsum dolor",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "/images/placeholder-wide.jpg",
     "sources": [
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_3-4_012_551?fit=wrap%2C0&wid=414&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_3-4_012_551?fit=wrap%2C0&wid=767&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_3-4_012_551?fit=wrap%2C0&wid=1023&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551?fit=wrap%2C0&wid=1280&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551?fit=wrap%2C0&wid=1920&resMode=sharp2&op_usm=1%2C1%2C6%2C0",
-      "https://assets.hermes.com/is/image/hermesedito/EDITO_PE26_STILL-LIFE_T2_16-9_012_551?fit=wrap%2C0&wid=3840&resMode=sharp2&op_usm=1%2C1%2C6%2C0"
+      "/images/placeholder-wide.jpg",
+      "/images/placeholder-wide.jpg",
+      "/images/placeholder-wide.jpg",
+      "/images/placeholder-wide.jpg",
+      "/images/placeholder-wide.jpg",
+      "/images/placeholder-wide.jpg"
     ]
   },
   "seo": {
-    "bodyHtml": "Discover the excellence of Hermès wallets, an essential collection designed for women and men. Fashioned from exceptional <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_material=cuir\">leathers</a>, our models combine aesthetics and practicality. From the classic long format to <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=portefeuilles_compact_et_mini\">compact wallets</a>, each piece is designed for daily use, just like our clever <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_category=porte_monnaies\">coin purses</a>. Find the emblematic signature of the <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_line=kelly\">Kelly</a> line and an elegant color palette, from timeless <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_color=black\">black</a> to natural <a href=\"/us/en/category/leather-goods/small-leather-goods/wallets/?facet_color=brown\">brown</a>. Gold or silver finishes enhance these durable creations."
+    "bodyHtml": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   "footerColumns": [
     {
-      "title": "Services",
+      "title": "Lorem section",
       "links": [
         {
-          "label": "Contact us",
+          "label": "Lorem link",
           "href": "/us/en/contact-us/"
         },
         {
-          "label": "FAQ",
+          "label": "Lorem link",
           "href": "/us/en/faq/"
         },
         {
-          "label": "Find a store",
+          "label": "Lorem link",
           "href": "/us/en/find-store/"
         },
         {
-          "label": "Stores selling beauty products",
-          "href": "/us/en/legal/6445-hermes-make-up-stores/"
+          "label": "Lorem link",
+          "href": "/"
         },
         {
-          "label": "Stores selling Apple Watch Hermès",
-          "href": "/us/en/legal/6469-apple-watch-hermes-locations/"
+          "label": "Lorem link",
+          "href": "/"
         },
         {
-          "label": "Gifting",
+          "label": "Lorem link",
           "href": "/us/en/faq/online-shopping/gifting/"
         },
         {
-          "label": "Made to measure",
+          "label": "Lorem link",
           "href": "/us/en/content/186736-institutional-campaign-2019/"
         },
         {
-          "label": "Maintenance and repair",
+          "label": "Lorem link",
           "href": "/us/en/content/278343-maintenance-repair/"
         }
       ]
     },
     {
-      "title": "Orders",
+      "title": "Lorem section",
       "links": [
         {
-          "label": "Payment",
+          "label": "Lorem link",
           "href": "/us/en/faq/online-shopping/payment/"
         },
         {
-          "label": "Shipping",
+          "label": "Lorem link",
           "href": "/us/en/faq/online-shopping/delivery/"
         },
         {
-          "label": "Collect in store",
+          "label": "Lorem link",
           "href": "/us/en/faq/online-shopping/collect-store/"
         },
         {
-          "label": "Track orders",
+          "label": "Lorem link",
           "href": "/us/en/login/"
         },
         {
-          "label": "Returns and exchanges",
+          "label": "Lorem link",
           "href": "/us/en/faq/online-shopping/returns-and-exchanges/"
         }
       ]
     },
     {
-      "title": "La Maison Hermès",
+      "title": "Lorem section",
       "links": [
         {
-          "label": "Sustainable development",
+          "label": "Lorem link",
           "href": "/us/en/content/129521-sustainable-development/"
         },
         {
-          "label": "The Hermès Foundation",
-          "href": "https://www.fondationdentreprisehermes.org/en/"
+          "label": "Lorem link",
+          "href": "https://example.com"
         },
         {
-          "label": "Join Hermès",
-          "href": "https://talents.hermes.com/en/sites/CX/"
+          "label": "Lorem link",
+          "href": "https://example.com"
         },
         {
-          "label": "Finance & Governance",
-          "href": "https://finance.hermes.com/en/"
+          "label": "Lorem link",
+          "href": "https://example.com"
         },
         {
-          "label": "Our partner brands",
+          "label": "Lorem link",
           "href": "/us/en/content/329750-our-partner-brands/"
         }
       ]
     },
     {
-      "title": "Legal",
+      "title": "Lorem section",
       "links": [
         {
-          "label": "Terms and conditions",
+          "label": "Lorem link",
           "href": "/us/en/legal/6549-general-terms-and-conditions/"
         },
         {
-          "label": "Privacy & cookies",
+          "label": "Lorem link",
           "href": "/us/en/legal/6735-privacy-cookies/"
         },
         {
-          "label": "Binding Corporate Rules (BCRs)",
+          "label": "Lorem link",
           "href": "/us/en/legal/6716-binding-corporate-rules/"
         },
         {
-          "label": "California Transparency in Supply Chain Act",
+          "label": "Lorem link",
           "href": "/us/en/legal/6583-california-transparency-supply-chain-act/"
         },
         {
-          "label": "Transparency in coverage",
+          "label": "Lorem link",
           "href": "/us/en/content/303949-transparency-in-coverage/"
         },
         {
-          "label": "Do Not Sell/Share My Personal Information",
+          "label": "Lorem link",
           "href": "/us/en/legal/6581-do-not-sell-my-personal-information-privacy-right/"
         },
         {
-          "label": "Legal issues",
+          "label": "Lorem link",
           "href": "/us/en/legal/6471-legal-issues/"
         },
         {
-          "label": "Accessibility",
+          "label": "Lorem link",
           "href": "/us/en/content/304192-accessibility-us/"
         },
         {
-          "label": "User guides",
+          "label": "Lorem link",
           "href": "/us/en/care-and-use/"
         },
         {
-          "label": "Hermès Sitemap",
+          "label": "Lorem link",
           "href": "/us/en/sitemap/"
         }
       ]
@@ -693,19 +704,19 @@
     "links": [
       {
         "label": "Facebook",
-        "href": "https://www.facebook.com/hermes/",
+        "href": "https://example.com",
         "icon": "facebook",
         "className": "facebook"
       },
       {
         "label": "Instagram",
-        "href": "https://www.instagram.com/hermes/",
+        "href": "https://example.com",
         "icon": "instagram",
         "className": "instagram"
       },
       {
         "label": "YouTube",
-        "href": "https://www.youtube.com/user/hermes",
+        "href": "https://example.com",
         "icon": "youtube",
         "className": "youtube"
       }

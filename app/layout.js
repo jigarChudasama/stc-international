@@ -1,41 +1,48 @@
-import { Manrope, EB_Garamond, Overpass_Mono } from "next/font/google";
-import ClientShell from "@/components/ClientShell";
+import { Manrope, EB_Garamond } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 import "./globals.css";
 
 const manrope = Manrope({
   variable: "--font-primary",
   subsets: ["latin"],
+  weight: ["400", "700", "800"],
   display: "swap",
+  preload: true,
 });
 
 const ebGaramond = EB_Garamond({
   variable: "--font-edito",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const overpassMono = Overpass_Mono({
-  subsets: ["latin"],
-  variable: "--font-overpass-mono",
+  weight: ["400"],
   display: "swap",
 });
 
 export const metadata = {
-  title: "The official Hermes online store | Hermès USA",
+  title: "STC International",
   description:
-    "Barénia Pleine Fleur reveals a new floral facet of the Hermès chypre and glows with a sunny radiance.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+    shortcut: ["/favicon.ico"],
+  },
   openGraph: {
-    title: "Barénia Pleine fleur",
+    title: "STC International",
     description:
-      "Barénia Pleine Fleur reveals a new floral facet of the Hermès chypre and glows with a sunny radiance.",
-    url: "https://www.hermes.com/us/en/",
-    siteName: "Hermès",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    url: "/",
+    siteName: "STC International",
     images: [
       {
-        url: "https://assets.hermes.com/is/image/hermesedito/VISUEL_PORTE_10_099-16-9%20%281%29",
-        width: 1600,
-        height: 700,
+        url: "/images/stc-logo.png",
+        width: 256,
+        height: 256,
       },
     ],
     locale: "en_US",
@@ -47,15 +54,20 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en-us"
-      className={`${manrope.variable} ${ebGaramond.variable} ${overpassMono.variable} h-full`}
+      className={`${manrope.variable} ${ebGaramond.variable} h-full`}
       suppressHydrationWarning
     >
       <head />
       <body
-        className="flex min-h-full flex-col bg-hermes-cream text-hermes-dark antialiased"
+        className="flex min-h-full flex-col bg-brand-cream text-brand-dark antialiased"
         suppressHydrationWarning
       >
-        <ClientShell>{children}</ClientShell>
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
+        <SmoothScroll />
       </body>
     </html>
   );

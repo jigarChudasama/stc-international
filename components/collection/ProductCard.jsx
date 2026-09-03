@@ -26,7 +26,7 @@ export default function ProductCard({ product, priority = false }) {
             </span>
           )}
           <Link
-            href={product.slug || '#'}
+            href={product.href || product.slug || "/collection"}
             className="after:absolute after:inset-0 after:z-20 after:content-['']"
             title={`${product.title}${product.color ? `, ${product.color}` : ''}`}
           >
@@ -36,11 +36,6 @@ export default function ProductCard({ product, priority = false }) {
           </Link>
           {product.color && (
             <span className="sr-only">Color: {product.color}</span>
-          )}
-          {product.price && (
-            <div className="relative z-10 m-0 text-xs leading-5">
-              <span className="notranslate">{product.price}</span>
-            </div>
           )}
         </div>
       </div>
@@ -67,6 +62,7 @@ export default function ProductCard({ product, priority = false }) {
               alt=""
               fill
               sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
               className={`pointer-events-none absolute inset-0 z-10 object-cover transition-opacity duration-500 ease-in-out ${
                 hovered ? 'opacity-100' : 'opacity-0'
               }`}

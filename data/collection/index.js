@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "All Hermès Wallets | Hermès USA",
+  title: "All products | Lorem ipsum",
   description:
-    "Discover all Hermès wallets: compact, long, coin purses and card holders crafted in the finest leathers.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };

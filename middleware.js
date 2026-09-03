@@ -8,9 +8,14 @@ export function middleware(request) {
   if (
     pathname === "/" ||
     pathname === "/collection" ||
+    pathname.startsWith("/collection/") ||
     pathname === "/about-us" ||
-    pathname.startsWith("/collection-detail") ||
-    pathname === "/quality-sourcing"
+    pathname === "/quality-sourcing" ||
+    pathname === "/terms-and-conditions" ||
+    pathname === "/faqs" ||
+    pathname === "/privacy-policy" ||
+    pathname === "/sustainability" ||
+    pathname === "/infrastructure"
   ) {
     return NextResponse.next();
   }

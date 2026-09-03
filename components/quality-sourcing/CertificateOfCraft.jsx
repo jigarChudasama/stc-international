@@ -26,7 +26,7 @@ function TextBlock({ children, className = "", tight = false }) {
 
 function ProductTile({ product }) {
   const image = (
-    <div className="relative aspect-[281/336] w-full overflow-hidden bg-hermes-divider">
+    <div className="relative aspect-[281/336] w-full overflow-hidden bg-brand-divider">
       <RemoteImage
         src={product.src}
         alt={product.alt}
