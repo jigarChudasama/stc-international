@@ -28,5 +28,3 @@ export function createSimplePage(title) {
 
 export const faqsPage = createSimplePage("FAQs");
 export const privacyPage = createSimplePage("Privacy Policies");
-export const sustainabilityPage = createSimplePage("Sustainability");
-export const infrastructurePage = createSimplePage("Infrastructure");
