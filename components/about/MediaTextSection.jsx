@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function MediaTextSection({ title, image, paragraphs, reverse = false }) {
+export default function MediaTextSection({ title, image, paragraphs, stats, reverse = false }) {
   return (
     <section className="media-split-section">
       <div className="media-split-grid">
@@ -29,6 +29,18 @@ export default function MediaTextSection({ title, image, paragraphs, reverse = f
                 </p>
               ))}
             </div>
+            {stats?.length ? (
+              <ul className="mt-8 flex max-w-xl flex-wrap gap-x-6 gap-y-3 md:mt-10">
+                {stats.map((stat) => (
+                  <li
+                    key={stat}
+                    className="text-[0.6875rem] uppercase tracking-[0.12em] text-brand-gold"
+                  >
+                    {stat}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         </div>
       </div>

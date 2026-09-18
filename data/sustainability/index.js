@@ -1,1 +1,1 @@
-export { metadata, HERO, EDITORIAL, MEDIA_SECTIONS } from "./content";
+export { metadata, PAGE, HERO, EDITORIAL, MEDIA_SECTIONS } from "./content";

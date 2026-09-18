@@ -14,6 +14,7 @@ export function middleware(request) {
     pathname === "/terms-and-conditions" ||
     pathname === "/faqs" ||
     pathname === "/privacy-policy" ||
+    pathname === "/contact-us" ||
     pathname === "/sustainability" ||
     pathname === "/infrastructure"
   ) {

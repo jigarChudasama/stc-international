@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/collection/ProductCard";
 import { ctaLink } from "@/lib/ui";
-import { LOREM } from "@/lib/placeholder";
 
 function CategorySectionHeader({ section }) {
   return (
@@ -10,11 +9,13 @@ function CategorySectionHeader({ section }) {
         id={`${section.id}-heading`}
         className="mb-4 font-edito text-[1.375rem] font-normal leading-tight tracking-wide text-brand-dark md:text-[1.75rem] lg:text-[2rem]"
       >
-        {section.headline || LOREM.title}
+        {section.headline || section.title}
       </h2>
-      <p className="mx-auto mb-6 max-w-[640px] text-xs leading-relaxed text-brand-gray md:text-sm">
-        {section.intro || LOREM.medium}
-      </p>
+      {section.intro ? (
+        <p className="mx-auto mb-6 max-w-[640px] text-xs leading-relaxed text-brand-gray md:text-sm">
+          {section.intro}
+        </p>
+      ) : null}
       <p>
         <Link
           href={section.detailHref || section.products?.[0]?.href || "/collection"}

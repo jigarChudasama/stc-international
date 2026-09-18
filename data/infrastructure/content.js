@@ -1,9 +1,14 @@
 import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE } from "@/lib/placeholder";
 
 export const metadata = {
-  title: "Infrastructure | STC International",
+  title: "Our Factory | STC International Leather Manufacturing, Bantala Kolkata",
   description:
-    "Production floors, quality labs, and logistics that support STC International leather goods.",
+    "Inside STC International's 120,000 sq. ft. leather goods factory in the Calcutta Leather Complex, Bantala: three production floors and machinery from five countries.",
+};
+
+export const PAGE = {
+  overline: "Where we make it",
+  title: "Infrastructure",
 };
 
 export const HERO = {
@@ -12,28 +17,34 @@ export const HERO = {
 };
 
 export const EDITORIAL = {
-  title: "Capacity built for craft",
+  title: "Capacity built for the long run",
   intro:
-    "Production lines, quality labs, and logistics work as one system — so every piece leaves with the same standard of finish and care.",
+    "Three floors, five countries of machinery, one factory. Everything a buyer needs to check on a factory audit is under this one roof.",
 };
 
 export const MEDIA_SECTIONS = [
   {
-    title: "PRODUCTION FLOOR",
+    title: "Our factory",
     image: PLACEHOLDER_WIDE,
     paragraphs: [
-      "Our infrastructure is organized around controlled flow: cutting rooms, stitching lines, finishing benches, and dedicated QC stations under one coordinated system.",
-      "Climate-managed storage keeps leather stable before cutting, while digital cutting plans reduce variance across production runs.",
-      "Skilled teams work in defined stations so every bag moves through the same checkpoints before it ships.",
+      "We set up our factory in the Calcutta Leather Complex, Bantala, in 2012, and it's been running ever since. It's a 120,000 sq. ft. (12,000 sq. m.) facility fitted with machinery imported from Italy, Germany, Japan, South Korea and China.",
+      "We keep reinvesting in newer production technology, because the standard our partners expect doesn't stay still, and neither do we.",
+    ],
+    stats: [
+      "120,000 sq. ft. facility",
+      "Established 2012",
+      "Machinery from 5 countries",
+      "3 production floors",
     ],
   },
   {
-    title: "QUALITY & LOGISTICS",
+    title: "Inside the factory",
     image: PLACEHOLDER_IMAGE,
     reverse: true,
     paragraphs: [
-      "A separate quality lab checks stitch density, hardware torque, colorfastness, and structural load before release.",
-      "Finished goods move through barcode tracking from packing to dispatch, keeping inventory and delivery timelines visible across warehouses.",
+      "Production runs across three floors, with departments dedicated to each stage: leather cutting, sample development, stitching, and cleaning & checking.",
+      "Equipment includes automatic stitching machines, laser cutting machines, die-less cutting machines and reinforcement cutting machines, plus a dedicated packing department.",
+      "We produce around 25,000 to 30,000 handbags and about 20,000 small leather goods every month.",
     ],
   },
 ];

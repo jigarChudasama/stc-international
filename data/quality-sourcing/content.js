@@ -1,23 +1,23 @@
-import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE, LOREM } from "@/lib/placeholder";
+import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE } from "@/lib/placeholder";
 
 export const heroImages = {
   desktop: [
-    { src: PLACEHOLDER_IMAGE, alt: LOREM.short },
-    { src: PLACEHOLDER_IMAGE, alt: LOREM.short },
+    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
+    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
   ],
   mobile: [
-    { src: PLACEHOLDER_IMAGE, alt: LOREM.short },
-    { src: PLACEHOLDER_IMAGE, alt: LOREM.short },
+    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
+    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
   ],
 };
 
 export const fullWidthImage = {
   src: PLACEHOLDER_WIDE,
-  alt: LOREM.short,
+  alt: "Quality and sourcing at STC International",
 };
 
 export const products = Array.from({ length: 15 }, (_, index) => ({
   href: "/collection",
   src: PLACEHOLDER_IMAGE,
-  alt: `${LOREM.product} ${index + 1}`,
+  alt: `Quality and sourcing at STC International ${index + 1}`,
 }));

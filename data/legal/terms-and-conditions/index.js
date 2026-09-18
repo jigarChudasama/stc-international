@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Terms and conditions | Lorem ipsum",
+  title: "Terms & Conditions | STC International",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "These terms govern your use of the STC International website. By browsing this site, you agree to them.",
 };
 
 export { page, sections } from "./content";

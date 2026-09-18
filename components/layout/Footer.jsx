@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { footer, customerService } from "@/data/layout/footer";
+import { customerService } from "@/data/contact";
+import { footer } from "@/data/layout/footer";
 import { HOME_ROUTE } from "@/lib/formatters";
 import BrandLogo from "./BrandLogo";
 
@@ -88,7 +89,7 @@ export default function Footer() {
         <div className="here-to-help-block order-1 border-b border-brand-divider px-[15px] py-[30px] pb-[15px] text-[0.75rem] leading-5 lg:order-none lg:flex lg:flex-1 lg:px-6 lg:py-6 lg:pl-6 lg:pr-12">
           <div>
             <span role="heading" aria-level="2" className="heading-4 mb-2 block text-[0.6875rem] font-bold uppercase tracking-[0.12em]">
-              Lorem service
+              Direct contact
             </span>
             {customerService?.callingHours?.map((hours) => (
               <p key={hours.days} className="description-block mb-1 text-[0.75rem] text-brand-gray">
@@ -96,18 +97,18 @@ export default function Footer() {
               </p>
             ))}
             <div className="call-us">
-              <a href={`tel:${customerService?.phone?.replace(/-/g, "")}`} className="text-[0.875rem] underline hover:no-underline">
+              <a href={`tel:${customerService?.phone?.replace(/[^\d+]/g, "")}`} className="text-[0.875rem] underline hover:no-underline">
                 {customerService?.phone}
               </a>
             </div>
             <div className="email-us mt-2">
-              <Link
-                href={HOME_ROUTE}
+              <a
+                href={`mailto:${customerService?.email}`}
                 aria-label="Send an email to customer service"
                 className="text-[0.75rem] underline hover:no-underline"
               >
-                Email us
-              </Link>
+                {customerService?.email}
+              </a>
             </div>
           </div>
         </div>

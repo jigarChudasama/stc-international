@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  CONTACT_URL,
   copy,
   fullWidthImage,
   heroImages,
   products,
-  SELECTION_URL,
 } from "@/data/quality-sourcing";
+import { ctaLink } from "@/lib/ui";
 
 function RemoteImage({ className, ...props }) {
   return <Image {...props} className={className} unoptimized />;
@@ -15,7 +16,7 @@ function RemoteImage({ className, ...props }) {
 function TextBlock({ children, className = "", tight = false }) {
   return (
     <div
-      className={`mx-auto w-full max-w-[600px] px-8 ${
+      className={`mx-auto w-full max-w-[640px] px-8 ${
         tight ? "py-10 md:py-12" : "py-16 md:py-20 lg:py-[88px]"
       } ${className}`}
     >
@@ -51,18 +52,23 @@ function ProductTile({ product }) {
 export default function CertificateOfCraft() {
   return (
     <div id="certificate-of-craft" className="w-full overflow-x-hidden">
-      <h1 className="sr-only">{copy.title}</h1>
-
-      <TextBlock>
-        <h2 className="qs-heading">{copy.title}</h2>
-        <p className="qs-copy mt-8 md:mt-10">{copy.intro}</p>
+      <TextBlock className="text-center">
+        <p className="mb-4 text-[0.6875rem] uppercase tracking-[0.12em] text-brand-gold">
+          {copy.overline}
+        </p>
+        <h1 className="font-edito text-[1.75rem] font-normal leading-tight tracking-wide text-brand-dark md:text-[2.25rem] lg:text-[2.5rem]">
+          {copy.title}
+        </h1>
+        <p className="mt-6 text-sm leading-relaxed text-brand-gray md:text-[0.9375rem] md:leading-7">
+          {copy.intro}
+        </p>
       </TextBlock>
 
       <section className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3">
           {heroImages.desktop.map((image, index) => (
             <div
-              key={image.src}
+              key={`desktop-${index}`}
               className={`relative aspect-square w-full overflow-hidden ${
                 index === 0 ? "hidden md:block" : ""
               }`}
@@ -79,7 +85,7 @@ export default function CertificateOfCraft() {
           ))}
           {heroImages.mobile.map((image, index) => (
             <div
-              key={`mobile-${image.src}`}
+              key={`mobile-${index}`}
               className={`relative aspect-[4/5] w-full overflow-hidden md:hidden ${
                 index > 0 ? "mt-3" : ""
               }`}
@@ -98,7 +104,23 @@ export default function CertificateOfCraft() {
       </section>
 
       <TextBlock tight>
-        <p className="qs-copy-body">{copy.card}</p>
+        <h2 className="mb-6 text-center font-edito text-xl font-normal tracking-wide text-brand-navy md:text-[1.375rem]">
+          {copy.materials.title}
+        </h2>
+        <ul className="space-y-4">
+          {copy.materials.items.map((item) => (
+            <li key={item.label} className="flex gap-3.5 text-left">
+              <span
+                aria-hidden="true"
+                className="mt-[0.55rem] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-gold"
+              />
+              <p className="text-sm leading-relaxed text-brand-gray md:text-[0.9375rem] md:leading-7">
+                <span className="font-bold text-brand-dark">{item.label}: </span>
+                {item.text}
+              </p>
+            </li>
+          ))}
+        </ul>
       </TextBlock>
 
       <section className="w-full">
@@ -114,22 +136,42 @@ export default function CertificateOfCraft() {
       </section>
 
       <TextBlock tight>
-        <p className="qs-copy-body">{copy.care}</p>
-        <p className="mt-8 text-left md:text-center">
-          <Link href={SELECTION_URL} className="qs-text-link">
-            <span className="md:hidden">{copy.ctaMobile}</span>
-            <span className="hidden md:inline">{copy.ctaDesktop}</span>
-          </Link>
-        </p>
+        <h2 className="mb-6 text-center font-edito text-xl font-normal tracking-wide text-brand-navy md:text-[1.375rem]">
+          {copy.quality.title}
+        </h2>
+        <div className="space-y-4">
+          {copy.quality.paragraphs.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="text-sm leading-relaxed text-brand-gray md:text-[0.9375rem] md:leading-7"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </TextBlock>
 
-      <section className="w-full pb-16 pt-4 md:pb-20">
+      <section className="w-full pt-4">
         <div className="grid grid-cols-2 gap-2 md:grid-cols-5 md:gap-[9px]">
-          {products.map((product) => (
-            <ProductTile key={product.src} product={product} />
+          {products.map((product, index) => (
+            <ProductTile key={`${product.src}-${index}`} product={product} />
           ))}
         </div>
       </section>
+
+      <TextBlock className="text-center">
+        <h2 className="mb-5 font-edito text-xl font-normal tracking-wide text-brand-navy md:text-[1.375rem]">
+          {copy.closing.title}
+        </h2>
+        <p className="mb-8 text-sm leading-relaxed text-brand-gray md:text-[0.9375rem] md:leading-7">
+          {copy.closing.body}
+        </p>
+        <p>
+          <Link href={CONTACT_URL} className={`${ctaLink} text-xs`}>
+            {copy.closing.cta}
+          </Link>
+        </p>
+      </TextBlock>
     </div>
   );
 }

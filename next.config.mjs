@@ -16,11 +16,6 @@ const nextConfig = {
         destination: "/collection/:slug",
         permanent: false,
       },
-      {
-        source: "/contact-us",
-        destination: "/",
-        permanent: false,
-      },
     ];
   },
   images: {
