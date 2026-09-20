@@ -81,7 +81,7 @@ export default function MenuDrawer({ isOpen, isActive, onClose, onOpenContact })
         aria-modal="true"
         aria-label="Main navigation"
         data-lenis-prevent
-        className={`absolute inset-y-0 left-0 flex w-[65%] max-w-[420px] flex-col bg-brand-cream transition-transform duration-300 ease-out ${
+        className={`absolute bottom-0 left-0 top-[52px] flex w-[65%] max-w-[420px] flex-col bg-brand-cream transition-transform duration-300 ease-out lg:top-[58px] ${
           isActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -140,6 +140,7 @@ export default function MenuDrawer({ isOpen, isActive, onClose, onOpenContact })
                                       src={normalizeImageUrl(sub.image, 96)}
                                       alt=""
                                       fill
+                                      unoptimized={sub.image?.includes(".png")}
                                       className="object-cover"
                                       sizes="36px"
                                     />

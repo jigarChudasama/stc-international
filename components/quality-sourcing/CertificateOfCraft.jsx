@@ -4,8 +4,8 @@ import {
   CONTACT_URL,
   copy,
   fullWidthImage,
+  getQualityProducts,
   heroImages,
-  products,
 } from "@/data/quality-sourcing";
 import { ctaLink } from "@/lib/ui";
 
@@ -153,7 +153,7 @@ export default function CertificateOfCraft() {
 
       <section className="w-full pt-4">
         <div className="grid grid-cols-2 gap-2 md:grid-cols-5 md:gap-[9px]">
-          {products.map((product, index) => (
+          {getQualityProducts().map((product, index) => (
             <ProductTile key={`${product.src}-${index}`} product={product} />
           ))}
         </div>

@@ -8,6 +8,7 @@ export default function HeroMedia({
   mobileImage,
   alt = "Editorial media",
   link = false,
+  href = HOME_ROUTE,
 }) {
   const mobilePoster = normalizeImageUrl(mobileImage);
   const desktopPoster = normalizeImageUrl(desktopImage);
@@ -34,7 +35,7 @@ export default function HeroMedia({
   return (
     <section className={`${contentContainerPadded} defer-paint`}>
       {link ? (
-        <Link href={HOME_ROUTE} className="block">
+        <Link href={href} className="block">
           {content}
         </Link>
       ) : (

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BrandLogo({ variant = "header" }) {
   const isHeader = variant === "header";
-  const size = isHeader ? 96 : 80;
+  const size = isHeader ? 96 : 192;
 
   return (
     <div itemScope itemType="http://schema.org/Organization">
@@ -18,11 +18,11 @@ export default function BrandLogo({ variant = "header" }) {
           alt="STC International"
           width={size}
           height={size}
-          sizes={isHeader ? "(max-width: 1023px) 76px, 96px" : "80px"}
+          sizes={isHeader ? "(max-width: 1023px) 76px, 96px" : "(max-width: 1023px) 144px, 192px"}
           className={
             isHeader
               ? "block h-[76px] w-[76px] object-contain lg:h-24 lg:w-24"
-              : "block h-20 w-20 object-contain"
+              : "block h-36 w-36 object-contain lg:h-48 lg:w-48"
           }
         />
         <span id="logo-accessibility" className="sr-only">

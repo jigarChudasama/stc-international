@@ -4,26 +4,28 @@ import { ctaLink } from "@/lib/ui";
 
 function CategorySectionHeader({ section }) {
   return (
-    <header className="mx-auto max-w-[720px] px-4 py-10 text-center lg:py-14">
+    <header className="mx-auto max-w-[720px] px-4 py-16 text-center md:py-20 lg:py-24">
       <h2
         id={`${section.id}-heading`}
-        className="mb-4 font-edito text-[1.375rem] font-normal leading-tight tracking-wide text-brand-dark md:text-[1.75rem] lg:text-[2rem]"
+        className="mb-5 font-edito text-[1.75rem] font-normal leading-tight tracking-wide text-brand-dark md:text-[2.25rem] lg:text-[2.5rem]"
       >
         {section.headline || section.title}
       </h2>
       {section.intro ? (
-        <p className="mx-auto mb-6 max-w-[640px] text-xs leading-relaxed text-brand-gray md:text-sm">
+        <p className="mx-auto mb-6 max-w-[640px] text-sm leading-relaxed text-brand-gray md:text-[0.9375rem] md:leading-7">
           {section.intro}
         </p>
       ) : null}
-      <p>
-        <Link
-          href={section.detailHref || section.products?.[0]?.href || "/collection"}
-          className={`${ctaLink} text-xs`}
-        >
-          {(section.ctaText || "Discover").toUpperCase()}
-        </Link>
-      </p>
+      {section.detailHref ? (
+        <p>
+          <Link
+            href={section.detailHref}
+            className={`${ctaLink} text-xs`}
+          >
+            {(section.ctaText || "Discover").toUpperCase()}
+          </Link>
+        </p>
+      ) : null}
     </header>
   );
 }
@@ -37,7 +39,7 @@ function CategoryProductSection({ section, eager = false }) {
     >
       <CategorySectionHeader section={section} />
 
-      <div id={`${section.id}-products`} className="scroll-mt-[70px] px-6 pb-4 lg:scroll-mt-20">
+      <div id={`${section.id}-products`} className="scroll-mt-[70px] px-6 pb-12 lg:scroll-mt-20 lg:pb-16">
         <div className="hero-product grid-container mx-auto grid w-full max-w-[1920px] grid-cols-2 grid-flow-dense gap-1 lg:grid-cols-[repeat(24,minmax(0,1fr))] lg:gap-4">
           {section.products.map((product, index) => (
             <div

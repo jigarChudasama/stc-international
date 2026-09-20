@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
     return [
@@ -13,13 +12,24 @@ const nextConfig = {
       },
       {
         source: "/collection-detail/:slug",
-        destination: "/collection/:slug",
+        destination: "/collection",
+        permanent: false,
+      },
+      {
+        source: "/collection/:slug",
+        destination: "/collection",
         permanent: false,
       },
     ];
   },
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+        pathname: "/vi/**",
+      },
+    ],
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [32, 48, 64, 96, 128, 256, 384],

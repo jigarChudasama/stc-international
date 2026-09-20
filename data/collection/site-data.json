@@ -13,8 +13,7 @@
     "Women’s Handbags",
     "Travelling Bags & Backpacks",
     "Wallets",
-    "Purses",
-    "Small Leather Goods"
+    "Purses"
   ],
   "highlightBanner": [
     {
@@ -44,12 +43,6 @@
     {
       "label": "Purses",
       "count": "28 items",
-      "href": "/collection",
-      "image": "/images/placeholder.jpg"
-    },
-    {
-      "label": "Small Leather Goods",
-      "count": "31 items",
       "href": "/collection",
       "image": "/images/placeholder.jpg"
     }

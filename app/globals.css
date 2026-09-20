@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Executive Edge Palette */
-  --color-brand-cream: #faf7f2; /* Soft Warm White — page surfaces */
-  --color-brand-header: #f5efe0; /* Warm Cream — header / elevated surfaces */
-  --color-brand-dark: #2b2b29; /* Deep Charcoal — primary text */
-  --color-brand-gray: #6b6860; /* Muted charcoal for secondary text */
-  --color-brand-border: #d4c8b0; /* Warm cream border */
-  --color-brand-divider: #ebe4d6; /* Soft divider on cream */
-  --color-brand-navy: #09284c; /* Deep Navy — brand / dark surfaces */
-  --color-brand-gold: #caa96e; /* Rich Gold — accent */
+  --color-brand-cream: #faf7f2;
+  --color-brand-header: #f5efe0;
+  --color-brand-dark: #2b2b29;
+  --color-brand-gray: #6b6860;
+  --color-brand-border: #d4c8b0;
+  --color-brand-divider: #ebe4d6;
+  --color-brand-navy: #09284c;
+  --color-brand-gold: #caa96e;
   --font-sans: var(--font-primary);
   --font-edito: var(--font-edito);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -25,8 +24,18 @@
     -ms-overflow-style: none;
   }
 
+  html {
+    --site-header-height: 52px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      --site-header-height: 58px;
+    }
+  }
+
   body {
-    @apply overflow-x-hidden bg-brand-cream text-brand-dark antialiased;
+    @apply overflow-x-clip bg-brand-cream text-brand-dark antialiased;
     font-family: var(--font-primary), "Manrope", Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
   }
@@ -125,6 +134,15 @@
     clip-path: inset(50% 0 0 0);
   }
 
+  .page-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    margin-top: calc(-1 * var(--site-header-height));
+    overflow: hidden;
+  }
+
   @media (min-width: 1024px) {
     .header-bar,
     .header-shell {
@@ -134,6 +152,10 @@
 
   .collection-highlight-slider {
     background-image: linear-gradient(to bottom, transparent 72%, rgba(0, 0, 0, 0.7));
+  }
+
+  .grid-container .product-grid-list-item {
+    align-self: start;
   }
 
   @media (min-width: 1024px) {
@@ -578,6 +600,37 @@
 
   .quality-sourcing-page .qs-text-link {
     @apply inline-block text-[11px] font-bold uppercase tracking-[0.08em] text-brand-navy underline underline-offset-[6px] decoration-brand-gold transition-opacity duration-200 hover:opacity-70;
+  }
+
+  .youtube-hero-cover {
+    container-type: size;
+    overflow: hidden;
+  }
+
+  .youtube-hero-cover iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100cqw, calc(100cqh * 16 / 9));
+    height: max(100cqh, calc(100cqw * 9 / 16));
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+  }
+
+  .youtube-hero-poster {
+    z-index: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .youtube-hero-cover {
+      display: none;
+    }
+
+    .youtube-hero-poster,
+    .youtube-hero-poster.is-ready {
+      opacity: 1 !important;
+    }
   }
 }
 

@@ -93,7 +93,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`header-shell sticky top-0 z-[100] overflow-visible bg-brand-header transition-transform duration-300 ease-in-out will-change-transform ${
+        className={`header-shell sticky top-0 z-[260] overflow-visible bg-brand-header transition-transform duration-300 ease-in-out will-change-transform ${
           isDrawerVisible
             ? "relative translate-y-0"
             : isHeaderVisible
@@ -104,14 +104,14 @@ export default function Header() {
       >
         {isDrawerVisible ? (
           <div
-            className={`pointer-events-none absolute inset-0 z-10 bg-black/50 transition-opacity duration-300 ease-out ${
+            className={`pointer-events-none absolute inset-0 z-0 bg-black/50 transition-opacity duration-300 ease-out ${
               isDrawerActive ? "opacity-100" : "opacity-0"
             }`}
             aria-hidden="true"
           />
         ) : null}
 
-        <div className={isDrawerVisible ? "relative z-0 pointer-events-none" : undefined}>
+        <div className="relative z-10">
 
         <div className="sr-only focus-within:not-sr-only focus-within:fixed focus-within:left-0 focus-within:top-0 focus-within:z-[9999] focus-within:bg-brand-cream focus-within:p-2">
           <a href="#main-content" className="mr-3 inline-block text-xs font-bold underline">
@@ -156,7 +156,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="header-logo-slot">
+          <div className={`header-logo-slot ${contact.isOpen ? "invisible" : ""}`}>
             <div className="header-logo-cradle">
               <h1 className="sr-only">STC International</h1>
               <BrandLogo />

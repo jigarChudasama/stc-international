@@ -22,8 +22,13 @@ export default function SmoothScroll() {
         },
         lerp: 0.1,
         smoothWheel: true,
+        syncTouch: false,
+        touchMultiplier: 1.5,
         respectReducedMotion: true,
       });
+
+      window.__stcLenis = lenis;
+      window.dispatchEvent(new Event("stc:lenis-ready"));
     };
 
     if (typeof window.requestIdleCallback === "function") {
@@ -38,6 +43,7 @@ export default function SmoothScroll() {
         window.cancelIdleCallback(idleId);
       }
       if (timeoutId != null) window.clearTimeout(timeoutId);
+      if (window.__stcLenis === lenis) window.__stcLenis = undefined;
       lenis?.destroy();
     };
   }, []);

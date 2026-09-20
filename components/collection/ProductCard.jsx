@@ -14,7 +14,7 @@ export default function ProductCard({ product, priority = false }) {
 
   return (
     <div
-      className="relative flex h-full grow flex-col text-left"
+      className="relative flex flex-col justify-start text-left"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -25,28 +25,35 @@ export default function ProductCard({ product, priority = false }) {
               New
             </span>
           )}
-          <Link
-            href={product.href || product.slug || "/collection"}
-            className="after:absolute after:inset-0 after:z-20 after:content-['']"
-            title={`${product.title}${product.color ? `, ${product.color}` : ''}`}
-          >
+          {product.href ? (
+            <Link
+              href={product.href}
+              className="after:absolute after:inset-0 after:z-20 after:content-['']"
+              title={`${product.title}${product.color ? `, ${product.color}` : ''}`}
+            >
+              <span className="relative z-10 text-sm font-normal leading-[22px]">
+                {product.title}
+              </span>
+            </Link>
+          ) : (
             <span className="relative z-10 text-sm font-normal leading-[22px]">
               {product.title}
             </span>
-          </Link>
+          )}
           {product.color && (
             <span className="sr-only">Color: {product.color}</span>
           )}
         </div>
       </div>
 
-      <div className="relative order-1 z-[1] block grow overflow-hidden">
+      <div className="relative order-1 z-[1] block overflow-hidden">
         <div className="relative aspect-square w-full overflow-hidden">
           <Image
             src={product.imageDefault}
             alt=""
             fill
             sizes="(max-width: 768px) 50vw, 33vw"
+            unoptimized={product.imageDefault?.includes(".png")}
             className={`pointer-events-none object-cover transition-opacity duration-500 ease-in-out ${
               hasHover && hovered ? 'opacity-0' : 'opacity-100'
             } ${
@@ -63,6 +70,7 @@ export default function ProductCard({ product, priority = false }) {
               fill
               sizes="(max-width: 768px) 50vw, 33vw"
               loading="lazy"
+              unoptimized={product.imageHover?.includes(".png")}
               className={`pointer-events-none absolute inset-0 z-10 object-cover transition-opacity duration-500 ease-in-out ${
                 hovered ? 'opacity-100' : 'opacity-0'
               }`}

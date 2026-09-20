@@ -22,7 +22,7 @@ const ebGaramond = EB_Garamond({
 export const metadata = {
   title: "STC International",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "STC International manufactures and exports leather bags, wallets and small leather goods from Kolkata, India. Star Export House recognized, 30+ years in the trade, six core export markets.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -35,7 +35,7 @@ export const metadata = {
   openGraph: {
     title: "STC International",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "STC International manufactures and exports leather bags, wallets and small leather goods from Kolkata, India. Star Export House recognized, 30+ years in the trade, six core export markets.",
     url: "/",
     siteName: "STC International",
     images: [

@@ -9,7 +9,7 @@ export default function CategoryPushRow() {
   return (
     <section className={`${contentContainer} defer-paint py-8`}>
       <div
-        className={`${horizontalScrollRow} md:grid md:grid-cols-3 md:gap-[2px] md:overflow-visible lg:grid-cols-6`}
+        className={`${horizontalScrollRow} md:grid md:grid-cols-3 md:gap-[2px] md:overflow-visible lg:grid-cols-5`}
       >
         {categories.map((item) => (
           <Link
@@ -23,6 +23,7 @@ export default function CategoryPushRow() {
                 alt={item.title}
                 fill
                 sizes="(max-width: 768px) 42vw, 16vw"
+                unoptimized={item.image?.includes(".png")}
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />

@@ -43,4 +43,4 @@ export const copy = {
 
 export const CONTACT_URL = "/contact-us";
 
-export { fullWidthImage, heroImages, products } from "./content";
+export { fullWidthImage, getQualityProducts, heroImages } from "./content";

@@ -14,6 +14,7 @@ export const PAGE = {
 export const HERO = {
   posterDesktop: PLACEHOLDER_WIDE,
   posterMobile: PLACEHOLDER_WIDE,
+  youtubeId: "2fxLXH2vNXk",
 };
 
 export const EDITORIAL = {
@@ -31,10 +32,10 @@ export const MEDIA_SECTIONS = [
       "We keep reinvesting in newer production technology, because the standard our partners expect doesn't stay still, and neither do we.",
     ],
     stats: [
-      "120,000 sq. ft. facility",
-      "Established 2012",
-      "Machinery from 5 countries",
-      "3 production floors",
+      { icon: "building", label: "120,000 sq. ft. facility" },
+      { icon: "calendar", label: "Established 2012" },
+      { icon: "globe", label: "Machinery from 5 countries" },
+      { icon: "layers", label: "3 production floors" },
     ],
   },
   {

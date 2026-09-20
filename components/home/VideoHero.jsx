@@ -10,14 +10,15 @@ const {
   title,
   description,
   ctaText,
+  ctaHref,
 } = videoHero;
 
 const desktopPoster = normalizeImageUrl(DESKTOP_IMAGE);
 
 export default function VideoHero() {
   return (
-    <section className="relative mx-auto w-full max-w-[1920px] overflow-hidden bg-brand-cream">
-      <div className="relative h-[90dvh] w-full md:h-dvh">
+    <section className="page-hero mx-auto max-w-[1920px] bg-brand-cream">
+      <div className="relative h-full w-full">
         <Image
           src={desktopPoster}
           alt={ariaLabel}
@@ -35,7 +36,7 @@ export default function VideoHero() {
           <p className="mb-5 max-w-[560px] text-xs leading-relaxed md:text-sm">
             <span>{description}</span>
           </p>
-          <Link href={HOME_ROUTE} className={`${ctaLink} text-xs text-white`}>
+          <Link href={ctaHref || HOME_ROUTE} className={`${ctaLink} text-xs text-white`}>
             {ctaText}
           </Link>
         </div>

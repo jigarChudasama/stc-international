@@ -1,3 +1,5 @@
+import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE } from "@/lib/placeholder";
+
 export const metadata = {
   title: "Contact STC International | Leather Goods Manufacturer, Kolkata",
   description:
@@ -11,13 +13,45 @@ export const page = {
     "Whether you're exploring a first order or scaling up an existing one, tell us what you need and we'll get back to you.",
 };
 
+export const HERO = {
+  posterDesktop: PLACEHOLDER_WIDE,
+  posterMobile: PLACEHOLDER_IMAGE,
+};
+
+export const MEDIA_SECTIONS = [
+  {
+    title: "Get in Touch",
+    image: PLACEHOLDER_WIDE,
+    paragraphs: [
+      "Whether you're exploring a first order or scaling up an existing one, tell us what you need and we'll get back to you.",
+      "Questions about production, sampling, or a factory visit can be sent through the inquiry form, or directly to our office.",
+    ],
+  },
+  {
+    title: "Where to find us",
+    image: PLACEHOLDER_IMAGE,
+    reverse: true,
+    paragraphs: [
+      "Registered Office: 41-B, Syed Amir Ali Avenue, Kolkata – 700019, West Bengal, India.",
+      "Factory: Plot # 595A, Zone-8, Calcutta Leather Complex, Karaidanga, Bantala, 24 Parganas(s), Pin – 743502, West Bengal, India.",
+      "Email: info@stcinternational.in. Phone: +91 98300 20344.",
+    ],
+  },
+];
+
+export const EDITORIAL = {
+  title: "Send an inquiry",
+  intro:
+    "Share your company, country, and product category of interest. We'll take it from there.",
+};
+
 export const productCategoryOptions = [
   "Men's Bags",
   "Women's Handbags",
   "Travelling Bags & Backpacks",
   "Purses",
   "Wallets",
-  "Small Leather Goods",
+  // "Small Leather Goods",
   "Other",
 ];
 

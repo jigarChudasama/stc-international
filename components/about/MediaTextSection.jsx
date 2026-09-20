@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { Building2, CalendarDays, Globe, Layers } from "lucide-react";
+
+const STAT_ICONS = {
+  building: Building2,
+  calendar: CalendarDays,
+  globe: Globe,
+  layers: Layers,
+};
 
 export default function MediaTextSection({ title, image, paragraphs, stats, reverse = false }) {
   return (
@@ -30,15 +38,26 @@ export default function MediaTextSection({ title, image, paragraphs, stats, reve
               ))}
             </div>
             {stats?.length ? (
-              <ul className="mt-8 flex max-w-xl flex-wrap gap-x-6 gap-y-3 md:mt-10">
-                {stats.map((stat) => (
-                  <li
-                    key={stat}
-                    className="text-[0.6875rem] uppercase tracking-[0.12em] text-brand-gold"
-                  >
-                    {stat}
-                  </li>
-                ))}
+              <ul className="mt-8 grid max-w-xl grid-cols-2 gap-x-6 gap-y-6 md:mt-10">
+                {stats.map((stat) => {
+                  const label = typeof stat === "string" ? stat : stat.label;
+                  const Icon = typeof stat === "string" ? null : STAT_ICONS[stat.icon];
+
+                  return (
+                    <li key={label} className="flex items-start gap-3">
+                      {Icon ? (
+                        <Icon
+                          aria-hidden="true"
+                          strokeWidth={1.5}
+                          className="mt-0.5 size-5 shrink-0 text-brand-gold"
+                        />
+                      ) : null}
+                      <span className="text-[0.6875rem] uppercase tracking-[0.12em] text-brand-gold">
+                        {label}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             ) : null}
           </div>

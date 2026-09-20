@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import CategoryDropdown from "@/components/contact/CategoryDropdown";
 import { form, productCategoryOptions } from "@/data/contact";
 
 const fieldClass =
@@ -99,28 +100,15 @@ export default function InquiryForm() {
         />
       </div>
 
-      <div>
-        <label htmlFor={`${id}-category`} className={labelClass}>
-          {form.fields.category}
-        </label>
-        <select
-          id={`${id}-category`}
-          name="category"
-          required
-          value={values.category}
-          onChange={updateField("category")}
-          className={`${fieldClass} appearance-auto`}
-        >
-          <option value="" disabled>
-            Select a category
-          </option>
-          {productCategoryOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </div>
+      <CategoryDropdown
+        id={`${id}-category`}
+        name="category"
+        label={form.fields.category}
+        value={values.category}
+        options={productCategoryOptions}
+        required
+        onChange={(category) => setValues((current) => ({ ...current, category }))}
+      />
 
       <div>
         <label htmlFor={`${id}-message`} className={labelClass}>
