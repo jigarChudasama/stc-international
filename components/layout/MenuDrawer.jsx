@@ -65,7 +65,7 @@ export default function MenuDrawer({ isOpen, isActive, onClose, onOpenContact })
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[250]" role="presentation">
+    <div className="fixed inset-0 z-[270]" role="presentation">
       <button
         type="button"
         className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ease-out ${
@@ -81,7 +81,7 @@ export default function MenuDrawer({ isOpen, isActive, onClose, onOpenContact })
         aria-modal="true"
         aria-label="Main navigation"
         data-lenis-prevent
-        className={`absolute bottom-0 left-0 top-[52px] flex w-[65%] max-w-[420px] flex-col bg-brand-cream transition-transform duration-300 ease-out lg:top-[58px] ${
+        className={`absolute inset-y-0 left-0 flex w-[65%] max-w-[420px] flex-col bg-brand-cream transition-transform duration-300 ease-out ${
           isActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >

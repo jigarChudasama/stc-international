@@ -3,8 +3,8 @@ import { PLACEHOLDER_IMAGE, PLACEHOLDER_WIDE } from "@/lib/placeholder";
 export const videoHero = {
   videoUrl: PLACEHOLDER_WIDE,
   mobileVideoUrl: PLACEHOLDER_IMAGE,
-  desktopImage: PLACEHOLDER_WIDE,
-  mobileImage: PLACEHOLDER_IMAGE,
+  desktopImage: "/images/home/landing -hero.png",
+  mobileImage: "/images/home/landing -hero.png",
   ariaLabel: "Leather goods, made in-house since 1992",
   title: "Leather goods, made in-house since 1992",
   description:

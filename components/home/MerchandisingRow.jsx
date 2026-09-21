@@ -9,7 +9,7 @@ export default function MerchandisingRow({ items = [], products = [] }) {
   return (
     <section className={`${contentContainer} defer-paint py-6 lg:py-8`}>
       <div
-        className={`${horizontalScrollRow} pb-2 md:grid md:grid-cols-4 md:gap-0 md:overflow-visible md:pb-0`}
+        className={`${horizontalScrollRow} pb-2 md:grid md:grid-cols-4 md:gap-[5px] md:overflow-visible md:pb-0`}
       >
         {tiles.map((item) => (
           <article

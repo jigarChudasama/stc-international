@@ -51,8 +51,8 @@ export const homeSections = [
   },
   {
     type: "heroMedia",
-    desktopImage: PLACEHOLDER_WIDE,
-    mobileImage: PLACEHOLDER_IMAGE,
+    desktopImage: "/images/home/Built-in-house.png",
+    mobileImage: "/images/home/Built-in-house.png",
     alt: "In-house leather production and quality checks",
     link: true,
     href: "/quality-sourcing",
@@ -60,10 +60,10 @@ export const homeSections = [
   {
     type: "merchandising",
     items: [
-      tile("Leather Cutting", "/quality-sourcing"),
-      tile("Sample Development", "/quality-sourcing"),
-      tile("Stitching", "/quality-sourcing"),
-      tile("Quality Check", "/quality-sourcing"),
+      { title: "Leather Cutting",    image: "/images/home/Leather Cutting.png",    href: "/quality-sourcing" },
+      { title: "Sample Development", image: "/images/home/Sample Development.png", href: "/quality-sourcing" },
+      { title: "Stitching",          image: "/images/home/Stiching.png",           href: "/quality-sourcing" },
+      { title: "Quality Check",      image: "/images/home/Quality Check.png",      href: "/quality-sourcing" },
     ],
   },
   {
@@ -77,9 +77,9 @@ export const homeSections = [
   },
   {
     type: "heroMedia",
-    desktopImage: PLACEHOLDER_WIDE,
-    mobileImage: PLACEHOLDER_IMAGE,
-    alt: "STC International factory and export",
+    desktopImage: "/images/home/hero-media-bag.png",
+    mobileImage: "/images/home/hero-media-bag.png",
+    alt: "STC International leather bag",
     href: "/about-us",
     alwaysShowControls: true,
     videoLoopMuteAutoplay: true,

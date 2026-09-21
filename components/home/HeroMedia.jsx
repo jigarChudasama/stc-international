@@ -19,6 +19,8 @@ export default function HeroMedia({
         src={mobilePoster}
         alt={alt}
         fill
+        quality={100}
+        unoptimized
         sizes="100vw"
         className="object-cover transition-transform duration-700 hover:scale-[1.01] md:hidden"
       />
@@ -26,6 +28,8 @@ export default function HeroMedia({
         src={desktopPoster}
         alt={alt}
         fill
+        quality={100}
+        unoptimized
         sizes="100vw"
         className="hidden object-cover transition-transform duration-700 hover:scale-[1.01] md:block"
       />
