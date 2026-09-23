@@ -60,17 +60,17 @@ export const homeSections = [
   {
     type: "merchandising",
     items: [
-      { title: "Leather Cutting",    image: "/images/home/Leather Cutting.png",    href: "/quality-sourcing" },
+      { title: "Leather Cutting", image: "/images/home/Leather Cutting.png", href: "/quality-sourcing" },
       { title: "Sample Development", image: "/images/home/Sample Development.png", href: "/quality-sourcing" },
-      { title: "Stitching",          image: "/images/home/Stiching.png",           href: "/quality-sourcing" },
-      { title: "Quality Check",      image: "/images/home/Quality Check.png",      href: "/quality-sourcing" },
+      { title: "Stitching", image: "/images/home/Stiching.png", href: "/quality-sourcing" },
+      { title: "Quality Check", image: "/images/home/Quality Check.png", href: "/quality-sourcing" },
     ],
   },
   {
     type: "editorial",
     title: "Exporting since 1992",
     intro:
-      "We sell across Germany, Sweden, Austria, the Netherlands, Spain and the USA, and we've made for brands including Joop!, Scharlau, Saddler and Radley London.",
+      "Every order goes through our very own factory with leather sourced from the best tanneries in Bengal and an in house QC team checking every piece before shipping.",
     label: "Meet our markets",
     ctaText: "Discover",
     ctaHref: "/about-us",

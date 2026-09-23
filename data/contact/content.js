@@ -92,6 +92,10 @@ export const directContact = {
   email: "info@stcinternational.in",
   phone: "+91 98300 20344",
   phoneHref: "tel:+919830020344",
+  phones: [
+    { number: "+91 98300 71922", href: "tel:+919830071922" },
+    { number: "+91 98305 35490", href: "tel:+919830535490" },
+  ],
 };
 
 export const factoryMap = {
@@ -106,6 +110,7 @@ export const factoryMap = {
 
 export const customerService = {
   phone: directContact.phone,
+  phones: directContact.phones,
   email: directContact.email,
   address: locations[0].lines,
 };

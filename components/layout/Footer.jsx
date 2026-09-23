@@ -160,10 +160,16 @@ export default function Footer() {
                 {hours.days} {hours.openingHours} - {hours.closingHours} {hours.timezone} :
               </p>
             ))}
-            <div className="call-us">
-              <a href={`tel:${customerService?.phone?.replace(/[^\d+]/g, "")}`} className="text-[0.875rem] underline hover:no-underline">
-                {customerService?.phone}
-              </a>
+            <div className="call-us flex flex-col gap-1">
+              {customerService?.phones?.map((p) => (
+                <a key={p.href} href={p.href} className="text-[0.875rem] underline hover:no-underline">
+                  {p.number}
+                </a>
+              )) ?? (
+                <a href={`tel:${customerService?.phone?.replace(/[^\d+]/g, "")}`} className="text-[0.875rem] underline hover:no-underline">
+                  {customerService?.phone}
+                </a>
+              )}
             </div>
             <div className="email-us mt-2">
               <a
@@ -181,25 +187,7 @@ export default function Footer() {
           <BrandLogo variant="footer" />
         </div>
 
-        <div className="social-block order-3 border-b border-brand-divider px-[15px] py-[30px] lg:order-none lg:flex lg:flex-1 lg:justify-end lg:px-6 lg:py-6 lg:pl-12">
-          <div>
-            <span role="heading" aria-level="2" className="heading-4 mb-3 block text-[0.6875rem] font-bold uppercase tracking-[0.12em]">
-              Follow us
-            </span>
-            <ul className="flex flex-wrap gap-4">
-              {footer.socialNetworks.map((social) => (
-                <li key={social.label}>
-                  <Link
-                    href={HOME_ROUTE}
-                    className="text-[0.6875rem] uppercase tracking-[0.08em] underline hover:no-underline"
-                  >
-                    {social.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+
       </div>
 
       {/* Bottom bar — copyright left, crafted-by right */}

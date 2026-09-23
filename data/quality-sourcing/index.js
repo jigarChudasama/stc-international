@@ -14,15 +14,15 @@ export const copy = {
     items: [
       {
         label: "Leather",
-        text: "Sourced from tanneries in Kolkata and Italy, so we can offer both cost-effective and premium options depending on what an order needs.",
+        text: "Our leather is purchased from the finest tanneries in Kolkata and Italy ensuring the best quality.",
       },
       {
         label: "Hardware",
-        text: "Sourced from Hong Kong and China, meeting REACH, Prop 65 and AFIRM standards required across most international markets.",
+        text: "We use the best machinery purchased from China, to produce goods up to the standards that our buyers need and require.",
       },
       {
         label: "Certified sourcing",
-        text: "70 to 80% of our leather comes from an LWG certified, Silver-rated tannery, and around 15% of our production uses eco or vegetable-tanned leather.",
+        text: "100% of our leather comes from an LWG certified, Silver-rated tannery, and around 15% of our production uses eco or vegetable-tanned leather.",
       },
     ],
   },
