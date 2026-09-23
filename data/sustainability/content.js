@@ -14,6 +14,11 @@ export const PAGE = {
 export const HERO = {
   posterDesktop: PLACEHOLDER_IMAGE,
   posterMobile: PLACEHOLDER_WIDE,
+  title: "Sustainability we can back up",
+  description:
+    "Solar-powered facilities, LWG-certified leather sourcing, and ethical manufacturing inside our own factory walls in Kolkata.",
+  ctaText: "Our Practices",
+  ctaHref: "/quality-sourcing",
 };
 
 export const EDITORIAL = {

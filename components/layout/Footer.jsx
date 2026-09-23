@@ -206,7 +206,7 @@ export default function Footer() {
             Crafted by
           </span>
           <HeroWordmarkIcon
-            className="h-[16px] w-auto text-brand-navy"
+            className="h-[11px] w-auto text-brand-navy"
             aria-hidden="true"
           />
         </a>

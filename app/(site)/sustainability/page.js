@@ -13,7 +13,15 @@ export const metadata = pageMetadata;
 export default function SustainabilityPage() {
   return (
     <div className="about-us-page w-full">
-      <HeroSection posterDesktop={HERO.posterDesktop} posterMobile={HERO.posterMobile} />
+      <HeroSection
+        posterDesktop={HERO.posterDesktop}
+        posterMobile={HERO.posterMobile}
+        alt="Sustainability at STC International"
+        title={HERO.title}
+        description={HERO.description}
+        ctaText={HERO.ctaText}
+        ctaHref={HERO.ctaHref}
+      />
       {MEDIA_SECTIONS.map((section) => (
         <MediaTextSection key={section.title} {...section} />
       ))}

@@ -14,8 +14,13 @@ export const page = {
 };
 
 export const HERO = {
-  posterDesktop: PLACEHOLDER_WIDE,
-  posterMobile: PLACEHOLDER_IMAGE,
+  posterDesktop: "/images/contact-us-hero.png",
+  posterMobile: "/images/contact-us-hero.png",
+  title: "Let's work together",
+  description:
+    "Whether you're exploring a first order or scaling up production, tell us what you need and our team will get back to you.",
+  ctaText: "Send Inquiry",
+  ctaHref: "#contact-form",
 };
 
 export const MEDIA_SECTIONS = [

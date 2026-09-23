@@ -22,12 +22,17 @@ export const HERO_VIDEO = {
   mobile: "",
   posterDesktop: "/images/about/about-hero.png",
   posterMobile: "/images/about/about-hero.png",
+  title: "Three decades in leather",
+  description:
+    "STC International cuts, stitches and finishes export-quality leather goods at our own factory in Kolkata since 1992.",
+  ctaText: "Discover Collection",
+  ctaHref: "/collection",
 };
 
 export const MEDIA_SECTIONS = [
   {
     title: "Three decades in leather",
-    image: PLACEHOLDER_WIDE,
+    image: "/images/about/about-3.jpg",
     paragraphs: [
       "STC International started in 1992 as a leather goods manufacturer in Kolkata, and that's still exactly what we are. No agencies in between and no subcontracted factories, just our own team cutting, stitching and finishing every order that leaves our doors.",
       "Over more than 30 years we've built the kind of expertise that only comes from doing the same craft carefully, for a long time. We make ladies' handbags and men's bags (messenger bags, backpacks, briefcases and travel bags), plus a full line of small leather goods: wallets, purses, key pouches and card holders.",
@@ -36,7 +41,7 @@ export const MEDIA_SECTIONS = [
   },
   {
     title: "How we work",
-    image: PLACEHOLDER_IMAGE,
+    image: "/images/about/about-2.jpg",
     reverse: true,
     paragraphs: [
       "Every order runs through the same process: cutting, sample development, stitching, cleaning and checking, all under one roof at our Bantala factory.",

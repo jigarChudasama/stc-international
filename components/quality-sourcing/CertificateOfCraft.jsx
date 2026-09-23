@@ -65,30 +65,31 @@ export default function CertificateOfCraft() {
       </TextBlock>
 
       <section className="w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3">
+        {/* Desktop */}
+        <div className="hidden md:grid md:grid-cols-2 md:gap-3">
           {heroImages.desktop.map((image, index) => (
             <div
               key={`desktop-${index}`}
-              className={`relative aspect-square w-full overflow-hidden ${
-                index === 0 ? "hidden md:block" : ""
-              }`}
+              className="relative aspect-square w-full overflow-hidden"
             >
               <RemoteImage
                 src={image.src}
                 alt={image.alt}
                 fill
                 priority={index === 0}
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="50vw"
                 className="object-cover"
               />
             </div>
           ))}
+        </div>
+
+        {/* Mobile */}
+        <div className="grid grid-cols-1 gap-3 md:hidden">
           {heroImages.mobile.map((image, index) => (
             <div
               key={`mobile-${index}`}
-              className={`relative aspect-[4/5] w-full overflow-hidden md:hidden ${
-                index > 0 ? "mt-3" : ""
-              }`}
+              className="relative aspect-[4/5] w-full overflow-hidden"
             >
               <RemoteImage
                 src={image.src}
@@ -124,7 +125,7 @@ export default function CertificateOfCraft() {
       </TextBlock>
 
       <section className="w-full">
-        <div className="relative aspect-[1440/714] w-full overflow-hidden">
+        <div className="relative aspect-[16/9] w-full overflow-hidden">
           <RemoteImage
             src={fullWidthImage.src}
             alt={fullWidthImage.alt}

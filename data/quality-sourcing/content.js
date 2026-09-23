@@ -3,18 +3,30 @@ import { PRODUCT_CATEGORIES } from "@/data/collection/categories";
 
 export const heroImages = {
   desktop: [
-    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
-    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
+    {
+      src: "/images/Certificate-of-Craft-1.png",
+      alt: "Certificate of Craft - STC International",
+    },
+    {
+      src: "/images/Certificate-of-Craft-2.png",
+      alt: "Certificate of Craft - Handcrafted Leather Bag",
+    },
   ],
   mobile: [
-    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
-    { src: PLACEHOLDER_IMAGE, alt: "Quality and sourcing at STC International" },
+    {
+      src: "/images/Certificate-of-Craft-1.png",
+      alt: "Certificate of Craft - STC International",
+    },
+    {
+      src: "/images/Certificate-of-Craft-2.png",
+      alt: "Certificate of Craft - Handcrafted Leather Bag",
+    },
   ],
 };
 
 export const fullWidthImage = {
-  src: PLACEHOLDER_WIDE,
-  alt: "Quality and sourcing at STC International",
+  src: "/images/Certificate-of-Craft-3.png",
+  alt: "Certificate of Craft - Handcrafted Leather Wallets & Cardholders",
 };
 
 function shuffle(list) {

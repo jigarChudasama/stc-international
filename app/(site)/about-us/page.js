@@ -20,6 +20,10 @@ export default function AboutUsPage() {
         posterDesktop={HERO_VIDEO.posterDesktop}
         posterMobile={HERO_VIDEO.posterMobile}
         alt="About STC International"
+        title={HERO_VIDEO.title}
+        description={HERO_VIDEO.description}
+        ctaText={HERO_VIDEO.ctaText}
+        ctaHref={HERO_VIDEO.ctaHref}
       />
       {MEDIA_SECTIONS.map((section) => (
         <MediaTextSection key={section.title} {...section} />

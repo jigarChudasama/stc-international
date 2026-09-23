@@ -18,12 +18,13 @@ export default function MediaTextSection({ title, image, paragraphs, stats, reve
               src={image}
               alt={title}
               fill
+              unoptimized
               className="object-cover object-center"
               sizes="(max-width: 767px) 100vw, 50vw"
             />
           </div>
           <div className="relative min-h-[55vh] md:hidden">
-            <Image src={image} alt={title} fill className="object-cover" sizes="100vw" />
+            <Image src={image} alt={title} fill unoptimized className="object-cover" sizes="100vw" />
           </div>
         </div>
         <div className={`media-split-text-track ${reverse ? "md:order-1" : ""}`}>

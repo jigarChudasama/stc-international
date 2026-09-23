@@ -19,10 +19,14 @@ export default function ContactUsPage() {
         posterDesktop={HERO.posterDesktop}
         posterMobile={HERO.posterMobile}
         alt="Contact STC International"
+        title={HERO.title}
+        description={HERO.description}
+        ctaText={HERO.ctaText}
+        ctaHref={HERO.ctaHref}
       />
 
       {/* ── Content + Form ── */}
-      <section className="bg-brand-cream">
+      <section id="contact-form" className="bg-brand-cream">
         <div className="mx-auto max-w-[1920px] px-5 py-14 md:px-10 lg:py-20">
 
           {/* Two columns — left: heading + details | right: form */}
