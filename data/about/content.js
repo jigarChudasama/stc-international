@@ -20,8 +20,8 @@ export const EDITORIAL = {
 export const HERO_VIDEO = {
   desktop: "",
   mobile: "",
-  posterDesktop: PLACEHOLDER_WIDE,
-  posterMobile: PLACEHOLDER_IMAGE,
+  posterDesktop: "/images/about/about-hero.png",
+  posterMobile: "/images/about/about-hero.png",
 };
 
 export const MEDIA_SECTIONS = [

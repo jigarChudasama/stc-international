@@ -5,6 +5,7 @@ import QuoteSection from "@/components/about/QuoteSection";
 import TimelineSection from "@/components/about/TimelineSection";
 import {
   EDITORIAL,
+  HERO_VIDEO,
   MEDIA_SECTIONS,
   metadata as aboutMetadata,
   QUOTE,
@@ -15,7 +16,11 @@ export const metadata = aboutMetadata;
 export default function AboutUsPage() {
   return (
     <div className="about-us-page w-full">
-      <HeroSection />
+      <HeroSection
+        posterDesktop={HERO_VIDEO.posterDesktop}
+        posterMobile={HERO_VIDEO.posterMobile}
+        alt="About STC International"
+      />
       {MEDIA_SECTIONS.map((section) => (
         <MediaTextSection key={section.title} {...section} />
       ))}
